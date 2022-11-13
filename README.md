@@ -1,2 +1,11 @@
-# ana-components-docs
-🗒️ Docs for the 🅰️ Ana UI library
+# fresh project
+
+### Usage
+
+Start the project:
+
+```
+deno task start
+```
+
+This will watch the project directory and restart as necessary.
