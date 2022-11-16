@@ -1,24 +1,16 @@
 # Changelog
 
-## v0.0.3
+## v0.0.4
 
 ### Added
 
-- Color color
-  - `~/routes/atoms/color.tsx`
+- Better palette displays
+  - `~/src/const.ts`
+  - `~/src/types.ts`
+  - `~/routes/color.tsx`
+  - `~/components/ColorBlock.tsx`
 
-- Constants
-  `~/src/const.ts`
-
-### Removed
-
-- Boilerplate fresh features
-  - `~/islands/Counter.tsx`
-  - `~/routes/[name].tsx`
-  - `~/routes/index.tsx`
-  - `~/static/logo.svg`
-
-### Comming soon (v1.0.0)
+### Comming soon (v0.1.0)
 
 - Features
   - [ ] Content driven documentation using Sanity.io or raw md files.

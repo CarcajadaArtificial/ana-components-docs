@@ -1,6 +1,7 @@
 import { Footer, Header, Layout, Link, Page, Text } from "../../deps.ts";
 import Navigation from "../../islands/Navigation.tsx";
-import { graysDisplay, paletteDisplay } from "../../src/const.ts";
+import { orderedPalette, paletteDisplay } from "../../src/const.ts";
+import ColorBlock from "../../components/ColorBlock.tsx";
 
 export default function () {
   return (
@@ -12,27 +13,19 @@ export default function () {
           Color description
         </Text>
       </Header>
+      <Layout type="halves">
+        <div class="grid grid-cols-10">
+          {paletteDisplay.flat().map((color) => (
+            <ColorBlock
+              color={color}
+            />
+          ))}
+        </div>
+        <div className="grid grid-cols-10">
+          {orderedPalette.flat().map((color) => <ColorBlock color={color} />)}
+        </div>
+      </Layout>
       <Layout type="right">
-        <Text>Color palette</Text>
-        <div class="grid grid-cols-7 grid-rows-8">
-          {paletteDisplay.map((color) => (
-            <div
-              class={`aspect-square bg-${color}`}
-              title={color === "blanco" ? "" : color}
-            >
-            </div>
-          ))}
-        </div>
-        <Text>Grays</Text>
-        <div class="grid grid-cols-7">
-          {graysDisplay.map((color) => (
-            <div
-              class={`aspect-square bg-${color}`}
-              title={color}
-            >
-            </div>
-          ))}
-        </div>
         <Text>Themes</Text>
         <div class="flex flex-col">
           <Text type="heading">theme-name</Text>
