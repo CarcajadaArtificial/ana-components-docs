@@ -1,20 +1,12 @@
 # Changelog
 
-## v0.0.5
+## v0.0.6
 
 ### Added
 
-- Better palette displays
-  - `~/src/const.ts`
-  - `~/src/types.ts`
-  - `~/routes/color.tsx`
-  - `~/components/ColorBlock.tsx`
-
-- ColorPair component
-  - `~/components/ColorPair.tsx`
-
-- ColorDisplay island
+- Neighbor colors
   - `~/islands/ColorDisplay.tsx`
+  - `~/src/const.ts`
 
 ### Comming soon (v0.1.0)
 

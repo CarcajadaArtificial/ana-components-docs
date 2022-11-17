@@ -82,10 +82,20 @@ export default function () {
               </Text>
               <div className="flex gap-2">
                 <div class="w-full">
-                  <Text type="label">
+                  <Text type="paragraph">
                     <strong>Contrast vs blanco:&nbsp;</strong>
                     <span></span>
                   </Text>
+                </div>
+                <div class="w-full">
+                  <Text type="paragraph">
+                    <strong>Contrast vs obsidiana:&nbsp;</strong>
+                    <span></span>
+                  </Text>
+                </div>
+              </div>
+              <div className="flex gap-2">
+                <div class="w-full">
                   <span
                     className={`block bg-${selectedColor} text-blanco py-2 px-3 rounded`}
                   >
@@ -93,10 +103,6 @@ export default function () {
                   </span>
                 </div>
                 <div class="w-full">
-                  <Text type="label">
-                    <strong>Contrast vs obsidiana:&nbsp;</strong>
-                    <span></span>
-                  </Text>
                   <span
                     className={`block bg-${selectedColor} text-obsidiana py-2 px-3 rounded`}
                   >
@@ -104,11 +110,12 @@ export default function () {
                   </span>
                 </div>
               </div>
-              <Text type="subheading">Neighbor colors</Text>
-              <Text type="paragraph">princesa</Text>
-              <ColorPair mainColor={selectedColor} pairedColor="princesa" />
-              <Text type="paragraph">lavanda</Text>
-              <ColorPair mainColor={selectedColor} pairedColor="lavanda" />
+              {palette[selectedColor].neighbors.map((neighbor) => (
+                <>
+                  <Text type="paragraph">{neighbor}</Text>
+                  <ColorPair mainColor={selectedColor} pairedColor={neighbor} />
+                </>
+              ))}
             </div>
           )
           : null}
