@@ -70,22 +70,22 @@ export const orderedPalette: (Colors | null)[][] = [
   // prettier-ignore
   ['pitahaya','manzana','ladrillo','cajeta',null,'limon','turquesa','cobalto','uva','grafito'],
   // prettier-ignore
-  [null,'fresa',null,null,null,null,'menta',null,null,'hierro'],
+  [null,'fresa',null,null,null,'mota',null,'detergente',null,'hierro'],
   // prettier-ignore
-  [null,'chicle','ambar','flan',null,null,null,null,'lavanda','acero'],
+  [null,'chicle','ambar','flan',null,null,'menta',null,'lavanda','acero'],
   // prettier-ignore
-  [null,'pastel',null,'tortilla','wasabi','musgo','hielo','cielo','magia','plata'],
+  ['kawaii','bombon',null,'tortilla','wasabi','musgo','hielo','cielo','magia','plata'],
   // prettier-ignore
-  [null,null,null,null,'mantequilla',null,null,'vinca','princesa','papel'],
+  [null,'pastel',null,null,'mantequilla',null,null,'vinca','princesa','papel'],
   // prettier-ignore
   [null,null,null,'arena',null,null,null,null,'nube','blanco'],
 ];
 
 export const paletteDisplay: (Colors | null)[][] = [
   // prettier-ignore
-  ['cielo','vinca','nube','kawaii','pastel',null,null,null,'obsidiana',null],
+  ['cielo','vinca','nube','kawaii','pastel',null,'pitahaya',null,'obsidiana',null],
   // prettier-ignore
-  ['detergente',null,'princesa',null,'bombon','pitahaya','pulpo',null,'chapopote',null],
+  ['detergente',null,'princesa',null,'bombon',null,'pulpo',null,'chapopote',null],
   // prettier-ignore
   ['cobalto',null,'magia',null,'chicle',null,'vino',null,'grafito',null],
   // prettier-ignore

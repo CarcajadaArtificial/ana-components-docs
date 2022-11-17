@@ -1,21 +1,25 @@
 import { Text } from "../deps.ts";
+import { JSX } from "preact";
 import type { Colors } from "../src/types.ts";
 
-interface iColorBlock {
+interface iColorBlock
+  extends JSX.HTMLAttributes<HTMLDivElement>, Partial<ARIAMixin> {
   color: Colors | null;
 }
 
 export default function (props: iColorBlock) {
+  const { color, ...p } = props;
   return (
     <div
       class="color-block outline-cobalto m-0.5"
-      tabIndex={props.color === null ? -1 : 0}
+      tabIndex={color === null ? -1 : 0}
+      {...p}
     >
       <div
-        class={`aspect-square rounded bg-${
-          props.color ? props.color : "blanco"
-        } ${props.color === "blanco" ? "border-1 border-hierro" : null}`}
-        title={props.color ? props.color : ""}
+        class={`aspect-square rounded bg-${color ? color : "blanco"} ${
+          color === "blanco" ? "border-1 border-hierro" : null
+        }`}
+        title={color ? color : ""}
       />
     </div>
   );

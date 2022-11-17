@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.0.4
+## v0.0.5
 
 ### Added
 
@@ -9,6 +9,12 @@
   - `~/src/types.ts`
   - `~/routes/color.tsx`
   - `~/components/ColorBlock.tsx`
+
+- ColorPair component
+  - `~/components/ColorPair.tsx`
+
+- ColorDisplay island
+  - `~/islands/ColorDisplay.tsx`
 
 ### Comming soon (v0.1.0)
 
