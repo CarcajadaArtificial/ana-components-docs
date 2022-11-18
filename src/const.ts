@@ -214,7 +214,7 @@ export const palette: Palette = {
     h: 25,
     s: 90,
     l: 62,
-    neighbors: ['flan', 'ladrillo'],
+    neighbors: ['flan', 'ladrillo', 'cajeta'],
   },
   lapis: {
     hex: '#000066',

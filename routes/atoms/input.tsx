@@ -4,11 +4,11 @@ import {
   Input,
   Layout,
   Link,
-  Page,
   Select,
   Text,
   TextArea,
 } from "../../deps.ts";
+import Page from "../../components/Page.tsx";
 import Navigation from "../../islands/Navigation.tsx";
 
 export default function () {

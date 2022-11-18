@@ -1,12 +1,24 @@
 # Changelog
 
-## v0.0.6
+## v0.0.7
 
 ### Added
 
-- Neighbor colors
+- Fixed ColorBlock support for darkMode
+  - `~/components/ColorBlock.tsx`
+
+- Better contrast comparison
   - `~/islands/ColorDisplay.tsx`
-  - `~/src/const.ts`
+
+- Navigation support for darkMode
+  - `~/islands/Navigation.tsx`
+
+- Theme Support
+  - `~/components/Page.tsx`
+  - `~/routes/atoms/color.tsx`
+  - `~/routes/atoms/input.tsx`
+  - `~/routes/atoms/text.tsx`
+  - `~/routes/atoms/theme.tsx`
 
 ### Comming soon (v0.1.0)
 

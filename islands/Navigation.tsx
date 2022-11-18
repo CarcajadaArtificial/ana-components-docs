@@ -20,11 +20,15 @@ export default function (props: iNavigation) {
       label: "color",
       href: "/atoms/color",
     },
+    {
+      label: "theme",
+      href: "/atoms/theme",
+    },
   ];
 
   return (
     <Navigation>
-      <Link nostyle href="/">Ana Component Docs</Link>
+      <Link href="/">Ana Component Docs</Link>
       <div class="flex">
         <div class="flex-1">
           <Text>{props.title}</Text>
@@ -33,7 +37,9 @@ export default function (props: iNavigation) {
           isOpen={menuIsOpen}
           onclick={() => setMenuIsOpen(!menuIsOpen)}
           links={links}
-        />
+        >
+          <Text>☰</Text>
+        </Menu>
       </div>
     </Navigation>
   );

@@ -1,4 +1,5 @@
-import { Footer, Header, Layout, Link, Page, Text } from "../../deps.ts";
+import { Footer, Header, Layout, Link, Text } from "../../deps.ts";
+import Page from "../../components/Page.tsx";
 import Navigation from "../../islands/Navigation.tsx";
 
 export default function text() {

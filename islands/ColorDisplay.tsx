@@ -7,10 +7,11 @@ import { useState } from "preact/hooks";
 
 export default function () {
   const [ordered, setOrdered] = useState<boolean>(true);
-  const [selectedColor, setSelectedColor] = useState<Colors | null>("magia");
+  const [selectedColor, setSelectedColor] = useState<Colors | null>(null);
+
   return (
     <div>
-      <Layout type="right">
+      <Layout type={selectedColor ? "right" : "focus"}>
         <div>
           <Input
             type="checkbox"
@@ -94,7 +95,7 @@ export default function () {
                   </Text>
                 </div>
               </div>
-              <div className="flex gap-2">
+              <div className="grid grid-cols-2 gap-2">
                 <div class="w-full">
                   <span
                     className={`block bg-${selectedColor} text-blanco py-2 px-3 rounded`}
@@ -105,6 +106,20 @@ export default function () {
                 <div class="w-full">
                   <span
                     className={`block bg-${selectedColor} text-obsidiana py-2 px-3 rounded`}
+                  >
+                    Example text
+                  </span>
+                </div>
+                <div class="w-full">
+                  <span
+                    className={`block text-${selectedColor} bg-blanco py-2 px-3 rounded`}
+                  >
+                    Example text
+                  </span>
+                </div>
+                <div class="w-full">
+                  <span
+                    className={`block text-${selectedColor} bg-obsidiana py-2 px-3 rounded`}
                   >
                     Example text
                   </span>
