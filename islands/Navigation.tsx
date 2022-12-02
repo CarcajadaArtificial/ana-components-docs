@@ -3,6 +3,7 @@ import { Link, Menu, Navigation, Text } from "../deps.ts";
 
 interface iNavigation {
   title: string;
+  fixed?: boolean;
 }
 
 export default function (props: iNavigation) {
@@ -27,7 +28,7 @@ export default function (props: iNavigation) {
   ];
 
   return (
-    <Navigation>
+    <Navigation fixed={props.fixed ? true : false}>
       <Link href="/">Ana Component Docs</Link>
       <div class="flex">
         <div class="flex-1">

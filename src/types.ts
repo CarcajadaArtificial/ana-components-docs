@@ -29,6 +29,7 @@ export type Colors =
   | 'manzana'
   | 'turquesa'
   | 'vinca'
+  | 'borrador'
   | 'pitahaya'
   | 'obsidiana'
   | 'kawaii'
@@ -44,3 +45,7 @@ export type Colors =
   | 'wasabi'
   | 'princesa'
   | 'nube';
+
+export type Theme = 'newspaper' | 'candyland' | 'test';
+
+export const allThemes: Theme[] = ['newspaper', 'candyland', 'test'];

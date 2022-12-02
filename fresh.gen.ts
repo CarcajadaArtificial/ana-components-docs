@@ -12,6 +12,7 @@ import * as $5 from "./routes/atoms/theme.tsx";
 import * as $6 from "./routes/index.tsx";
 import * as $$0 from "./islands/ColorDisplay.tsx";
 import * as $$1 from "./islands/Navigation.tsx";
+import * as $$2 from "./islands/ThemeExample.tsx";
 
 const manifest = {
   routes: {
@@ -26,6 +27,7 @@ const manifest = {
   islands: {
     "./islands/ColorDisplay.tsx": $$0,
     "./islands/Navigation.tsx": $$1,
+    "./islands/ThemeExample.tsx": $$2,
   },
   baseUrl: import.meta.url,
   config,

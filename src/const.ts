@@ -316,6 +316,16 @@ export const palette: Palette = {
     l: 83,
     neighbors: ['nube', 'cielo'],
   },
+  borrador: {
+    hex: '#d754a9',
+    r: 215,
+    g: 84,
+    b: 169,
+    h: 321,
+    s: 61,
+    l: 84,
+    neighbors: ['pitahaya', 'pastel'],
+  },
   pitahaya: {
     hex: '#b3128a',
     r: 179,
@@ -324,7 +334,7 @@ export const palette: Palette = {
     h: 315,
     s: 82,
     l: 39,
-    neighbors: ['pulpo'],
+    neighbors: ['borrador', 'pulpo'],
   },
   obsidiana: {
     hex: '#0c0a0d',
@@ -364,7 +374,7 @@ export const palette: Palette = {
     h: 330,
     s: 91,
     l: 78,
-    neighbors: ['kawaii', 'bombon'],
+    neighbors: ['kawaii', 'bombon', 'borrador'],
   },
   papel: {
     hex: '#eee6f2',
@@ -476,7 +486,7 @@ export const orderedPalette: (Colors | null)[][] = [
   // prettier-ignore
   ['pitahaya','manzana','ladrillo','cajeta',null,'limon','turquesa','cobalto','uva','grafito'],
   // prettier-ignore
-  [null,'fresa',null,null,null,'mota',null,'detergente',null,'hierro'],
+  ['borrador','fresa',null,null,null,'mota',null,'detergente',null,'hierro'],
   // prettier-ignore
   [null,'chicle','ambar','flan',null,null,'menta',null,'lavanda','acero'],
   // prettier-ignore
@@ -489,7 +499,7 @@ export const orderedPalette: (Colors | null)[][] = [
 
 export const paletteDisplay: (Colors | null)[][] = [
   // prettier-ignore
-  ['cielo','vinca','nube','kawaii','pastel',null,'pitahaya',null,'obsidiana',null],
+  ['cielo','vinca','nube','kawaii','pastel','borrador','pitahaya',null,'obsidiana',null],
   // prettier-ignore
   ['detergente',null,'princesa',null,'bombon',null,'pulpo',null,'chapopote',null],
   // prettier-ignore

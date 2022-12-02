@@ -1,7 +1,7 @@
 import ColorBlock from "../components/ColorBlock.tsx";
 import ColorPair from "../components/ColorPair.tsx";
 import { orderedPalette, palette, paletteDisplay } from "../src/const.ts";
-import { Input, Layout, Text } from "../deps.ts";
+import { Card, Input, Layout, Text } from "../deps.ts";
 import type { Colors } from "../src/types.ts";
 import { useState } from "preact/hooks";
 
@@ -12,7 +12,8 @@ export default function () {
   return (
     <div>
       <Layout type={selectedColor ? "right" : "focus"}>
-        <div>
+        <Card>
+          <Text type="heading">Color palette selector</Text>
           <Input
             type="checkbox"
             label="Order by hue and brightness"
@@ -39,10 +40,10 @@ export default function () {
                 />
               ))}
           </div>
-        </div>
+        </Card>
         {selectedColor
           ? (
-            <div>
+            <Card>
               <Text type="heading">{selectedColor}</Text>
               <Text type="paragraph">Color description</Text>
               <Text type="label">
@@ -131,7 +132,7 @@ export default function () {
                   <ColorPair mainColor={selectedColor} pairedColor={neighbor} />
                 </>
               ))}
-            </div>
+            </Card>
           )
           : null}
       </Layout>

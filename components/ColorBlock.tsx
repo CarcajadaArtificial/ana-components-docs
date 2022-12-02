@@ -17,7 +17,7 @@ export default function (props: iColorBlock) {
     >
       <div
         class={`aspect-square rounded ${
-          color ? `bg-${color}` : "clr-bg-primary"
+          color ? `bg-${color}` : "clr-bg-secondary"
         } ${color === "blanco" || color === "obsidiana" ? "border-1" : null}`}
         title={color ? color : ""}
       />

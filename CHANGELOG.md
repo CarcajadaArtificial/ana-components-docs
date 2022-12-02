@@ -1,24 +1,41 @@
 # Changelog
 
-## v0.0.7
+## v0.0.8
 
 ### Added
 
-- Fixed ColorBlock support for darkMode
-  - `~/components/ColorBlock.tsx`
+- Candyland theme
+  - `~/islands/ThemeExample.tsx`
+  - `~/routes/theme.tsx`
 
-- Better contrast comparison
+- Updated color page
   - `~/islands/ColorDisplay.tsx`
+  - `~/islands/ColorBlock.tsx`
+  - `~/routes/color.tsx`
 
-- Navigation support for darkMode
+- Updated theme page
+  - `~/routes/theme.tsx`
+  - `~/islands/ThemeExample.tsx`
+
+- Static property to all navigations
   - `~/islands/Navigation.tsx`
-
-- Theme Support
-  - `~/components/Page.tsx`
-  - `~/routes/atoms/color.tsx`
   - `~/routes/atoms/input.tsx`
   - `~/routes/atoms/text.tsx`
-  - `~/routes/atoms/theme.tsx`
+
+- ThemeExample island
+  - `~/islands/ThemeExample.tsx`
+  - `~/routes/theme.tsx`
+
+- Updated stylesheet and component library
+  - `~/routes/_app.tsx`
+  - `~/deps.ts`
+
+- Added gitignore for local stylesheets.
+  - `~/.gitignore`
+
+- `borrador` color information
+  - `~/src/const.ts`
+  - `~/src/types.ts`
 
 ### Comming soon (v0.1.0)
 

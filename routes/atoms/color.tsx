@@ -1,4 +1,4 @@
-import { Footer, Header, Layout, Link, Text } from "../../deps.ts";
+import { Card, Footer, Header, Layout, Link, Main, Text } from "../../deps.ts";
 import Page from "../../components/Page.tsx";
 import Navigation from "../../islands/Navigation.tsx";
 import ColorDisplay from "../../islands/ColorDisplay.tsx";
@@ -6,14 +6,16 @@ import ColorDisplay from "../../islands/ColorDisplay.tsx";
 export default function () {
   return (
     <Page>
-      <Navigation title="color" />
+      <Navigation fixed title="color" />
       <Header>
         <Text type="title">Color</Text>
         <Text type="paragraph">
           Color description
         </Text>
       </Header>
-      <ColorDisplay />
+      <Main>
+        <ColorDisplay />
+      </Main>
       <Footer>
         <Text>
           Created by
