@@ -1,41 +1,19 @@
 # Changelog
 
-## v0.0.8
+## v0.0.9
 
 ### Added
 
-- Candyland theme
-  - `~/islands/ThemeExample.tsx`
+- Dusthorizon theme
+  - `~/src/types.ts`
   - `~/routes/theme.tsx`
 
-- Updated color page
-  - `~/islands/ColorDisplay.tsx`
-  - `~/islands/ColorBlock.tsx`
-  - `~/routes/color.tsx`
+- Adjustment to color `borrador`
+  - `~/src/const.ts`
 
-- Updated theme page
-  - `~/routes/theme.tsx`
-  - `~/islands/ThemeExample.tsx`
-
-- Static property to all navigations
-  - `~/islands/Navigation.tsx`
-  - `~/routes/atoms/input.tsx`
-  - `~/routes/atoms/text.tsx`
-
-- ThemeExample island
-  - `~/islands/ThemeExample.tsx`
-  - `~/routes/theme.tsx`
-
-- Updated stylesheet and component library
+- Updated Ana Components deps
   - `~/routes/_app.tsx`
   - `~/deps.ts`
-
-- Added gitignore for local stylesheets.
-  - `~/.gitignore`
-
-- `borrador` color information
-  - `~/src/const.ts`
-  - `~/src/types.ts`
 
 ### Comming soon (v0.1.0)
 

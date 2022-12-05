@@ -46,6 +46,11 @@ export type Colors =
   | 'princesa'
   | 'nube';
 
-export type Theme = 'newspaper' | 'candyland' | 'test';
+export type Theme = 'newspaper' | 'candyland' | 'dusthorizon' | 'test';
 
-export const allThemes: Theme[] = ['newspaper', 'candyland', 'test'];
+export const allThemes: Theme[] = [
+  'newspaper',
+  'candyland',
+  'dusthorizon',
+  'test',
+];

@@ -48,6 +48,21 @@ export default function () {
                 <ColorBlock color="uva" />
               </div>
             </div>
+            <Text>dusthorizon</Text>
+            <div>
+              <div class="grid grid-cols-10">
+                <ColorBlock color="blanco" />
+                <ColorBlock color="arena" />
+                <ColorBlock color="flan" />
+                <ColorBlock color="ladrillo" />
+                <ColorBlock color="vino" />
+                <ColorBlock color="obsidiana" />
+                <ColorBlock color="chicle" />
+                <ColorBlock color="bombon" />
+                <ColorBlock color="tortilla" />
+                <ColorBlock color="cajeta" />
+              </div>
+            </div>
           </Card>
         </Layout>
         <ThemeExample />
