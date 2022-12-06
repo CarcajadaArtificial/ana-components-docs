@@ -29,8 +29,8 @@ export default function () {
                 <ColorBlock color="chapopote" />
                 <ColorBlock color="chicle" />
                 <ColorBlock color="bombon" />
-                <ColorBlock color="blanco" />
-                <ColorBlock color="obsidiana" />
+                <ColorBlock color="mota" />
+                <ColorBlock color="jade" />
               </div>
             </div>
             <Text>candyland</Text>

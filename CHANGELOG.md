@@ -1,19 +1,24 @@
 # Changelog
 
-## v0.0.9
+## v0.0.10
 
 ### Added
 
-- Dusthorizon theme
-  - `~/src/types.ts`
-  - `~/routes/theme.tsx`
+- Button documentation page
+  - `~/routes/button.tsx`
+  - `~/islands/Navigation.tsx`
 
-- Adjustment to color `borrador`
-  - `~/src/const.ts`
+- Adjustment to newspaper theme
+  - `~/routes/theme.tsx`
 
 - Updated Ana Components deps
   - `~/routes/_app.tsx`
   - `~/deps.ts`
+
+### Removed
+
+- Deno Fresh out of the box Button component
+  - `~/components/Button.tsx`
 
 ### Comming soon (v0.1.0)
 

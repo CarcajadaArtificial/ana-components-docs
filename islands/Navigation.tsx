@@ -25,6 +25,10 @@ export default function (props: iNavigation) {
       label: "theme",
       href: "/atoms/theme",
     },
+    {
+      label: "button",
+      href: "/atoms/button",
+    },
   ];
 
   return (
