@@ -1,4 +1,5 @@
 import {
+  Card,
   Footer,
   Header,
   Input,
@@ -12,237 +13,86 @@ import {
 import Page from "../../components/Page.tsx";
 import Navigation from "../../islands/Navigation.tsx";
 
+const decoder = new TextDecoder("utf-8");
+const doc = {
+  description: decoder.decode(
+    Deno.readFileSync("docs/atoms/input/description.md"),
+  ),
+  default: decoder.decode(
+    Deno.readFileSync("docs/atoms/input/default.md"),
+  ),
+};
+
 export default function () {
   const selectOptions = ["Option one", "Option two", "Option three"];
-
   return (
     <Page>
       <Navigation fixed title="Input" />
       <Header>
         <Text type="title">{"Input"}</Text>
-        <Text type="paragraph">{"Input description."}</Text>
+        <Text type="paragraph">{doc.description}</Text>
       </Header>
       <Main>
-        <Layout type="right">
-          <Text>Text Input States</Text>
-          <div class="grid gap-4">
-            <Input />
-            <Input label="Input with label" />
-            <Input label="Input with placeholder" placeholder="placeholder" />
-            <Input label="Required input" placeholder="placeholder" required />
-            <Input
-              label="Input with error message"
-              placeholder="placeholder"
-              required
-              error="Error message."
-            />
-            <Input
-              label="Disabled input"
-              placeholder="placeholder"
-              disabled
-            />
-            <Input
-              label="Disbaled input with error message"
-              placeholder="placeholder"
-              disabled
-              error="Error message."
-              value="value"
-            />
-          </div>
-        </Layout>
-        <Layout type="right">
-          <Text>Textareas</Text>
-          <div class="grid gap-4">
-            <TextArea />
-            <TextArea label="TextArea with label" />
-            <TextArea
-              label="TextArea with placeholder"
-              placeholder="placeholder"
-            />
-            <TextArea
-              label="Required input"
-              placeholder="placeholder"
-              required
-            />
-            <TextArea
-              label="TextArea with error message"
-              placeholder="placeholder"
-              required
-              error="Error message."
-            />
-            <TextArea
-              label="Disabled input"
-              placeholder="placeholder"
-              disabled
-            />
-            <TextArea
-              label="Disbaled input with error message"
-              placeholder="placeholder"
-              disabled
-              error="Error message."
-            />
-          </div>
-        </Layout>
-        <Layout type="right">
-          <Text>Date and time inputs</Text>
-          <div class="grid gap-4">
-            <Input label="Date" type="date" />
-            <Input label="Datetime-local" type="datetime-local" />
-            <Input label="Month" type="month" />
-            <Input label="Time" type="time" />
-            <Input label="Week" type="week" />
-          </div>
-
-          <Text>Other text inputs</Text>
-          <div class="grid gap-4">
-            <Input label="Number" type="number" />
-            <Input label="Search" type="search" />
-            <Input label="Tel" type="tel" />
-            <Input label="Url" type="url" />
-            <Input label="Email" type="email" />
-            <Input label="Password" type="password" />
-          </div>
-
-          <Text>Checkbox options</Text>
-          <div class="grid gap-4">
-            <Input label="Checkbox" type="checkbox"></Input>
-            <Input label="Checkbox required" required type="checkbox"></Input>
-            <Input
-              label="Checkbox with error message"
-              error="Error message."
-              type="checkbox"
-            />
-            <Input label="Checkbox disabled" disabled type="checkbox"></Input>
-            <Input
-              label="Checkbox disabled with error message"
-              disabled
-              type="checkbox"
-              error="Error message."
-            >
-            </Input>
-          </div>
-        </Layout>
-        <Layout type="right">
-          <Text>Radio options</Text>
-          <div class="grid gap-4">
-            <Input name="radio-fieldset" label="Radio" type="radio"></Input>
-            <Input
-              name="radio-fieldset"
-              label="Radio required"
-              required
-              type="radio"
-            >
-            </Input>
-            <Input
-              name="radio-fieldset"
-              label="Radio with error message"
-              error="Error message."
-              type="radio"
-            />
-            <Input
-              name="radio-fieldset"
-              label="Radio disabled"
-              disabled
-              type="radio"
-            >
-            </Input>
-            <Input
-              name="radio-fieldset"
-              label="Radio disabled with error message"
-              disabled
-              type="radio"
-              error="Error message."
-            >
-            </Input>
-          </div>
-        </Layout>
-        <Layout type="right">
-          <Text>Button Inputs</Text>
-          <div class="grid gap-4">
-            <Input type="button" value="button" />
-            <Input type="submit" value="submit" />
-            <Input type="reset" value="reset" />
-            <Input
-              type="image"
-              value="image button"
-            />
-            <Input type="button" value="button" label="Button with label" />
-            <Input
-              type="button"
-              value="button"
-              error="Error message."
-              label="Button with error message"
-            />
-            <Input
-              type="button"
-              value="button"
-              disabled
-              label="Disabled button"
-            />
-            <Input
-              type="button"
-              value="button"
-              disabled
-              label="Disabled button with error"
-              error="Error message."
-            />
-          </div>
-        </Layout>
-        <Layout type="right">
-          <Text>Other Inputs</Text>
-          <div class="grid gap-4">
-            <Input type="color" label="Color input" />
-            <Input type="color" label="Disabled color input" disabled />
-            <Input
-              type="color"
-              label="Color input with error message"
-              error="Error message."
-            />
-            <Input type="range" label="Range input" />
-            <Input type="range" label="Disabled range input" disabled />
-            <Input
-              type="range"
-              label="Range input with error message"
-              error="Error message."
-            />
-          </div>
-        </Layout>
-        <Layout type="right">
-          <Text>Select</Text>
-          <div class="grid gap-4">
-            <Select options={selectOptions} />
-            <Select options={selectOptions} label="Select with label" />
-            <Select
-              options={selectOptions}
-              label="Select with placeholder"
-              placeholder="placeholder"
-            />
-            <Select
-              options={selectOptions}
-              label="Required input"
-              placeholder="placeholder"
-              required
-            />
-            <Select
-              options={selectOptions}
-              label="Select with error message"
-              placeholder="placeholder"
-              required
-              error="Error message."
-            />
-            <Select
-              options={selectOptions}
-              label="Disabled input"
-              placeholder="placeholder"
-              disabled
-            />
-            <Select
-              options={selectOptions}
-              label="Disbaled input with error message"
-              placeholder="placeholder"
-              disabled
-              error="Error message."
-            />
+        <Layout type="left">
+          <div class="grid gap-8">
+            <Card>
+              <Text type="heading">Default input</Text>
+              <Text type="paragraph">{doc.default}</Text>
+              <Text type="label">{"<Input />"}</Text>
+              <Input />
+            </Card>
+            <Card>
+              <Text type="heading">Component props</Text>
+              <Text type="subheading">label</Text>
+              <Text type="label">{'<Input label="First Name" />'}</Text>
+              <Input label="First Name" />
+              <Text type="subheading">error</Text>
+              <Text type="label">
+                {'<Input error="That username already exists." />'}
+              </Text>
+              <Input
+                label="Username"
+                error="That username already exists."
+              />
+              <Text type="subheading">maxWidth</Text>
+              <Input label="Confirmation code (48 characters)" />
+            </Card>
+            <Card>
+              <Text type="heading">Element attributes</Text>
+              <Text type="subheading">placeholder</Text>
+              <Text type="label">
+                {'<Input placeholder="Ana" />'}
+              </Text>
+              <Input label="First name" placeholder="Ana" />
+              <Text type="subheading">type</Text>
+              <Text type="label">{'<Input type="date" />'}</Text>
+              <Input label="First name" type="date" />
+              <Text type="subheading">required</Text>
+              <Text type="label">{"<Input required />"}</Text>
+              <Input label="Confirm password" type="password" required />
+              <Text type="subheading">disabled</Text>
+              <Text type="label">{"<Input disabled />"}</Text>
+              <Input label="disabled input" disabled />
+            </Card>
+            <Card>
+              <Text type="heading">Other inputs</Text>
+              <Text type="subheading">checkbox</Text>
+              <Text type="label">{'<Input type="checkbox" />'}</Text>
+              <Input label="checkbox" type="checkbox" />
+              <Text type="subheading">radio</Text>
+              <Text type="label">{'<Input type="radio" />'}</Text>
+              <Input label="radio" type="radio" />
+              <Text type="subheading">button</Text>
+              <Text type="label">{'<Input type="button" />'}</Text>
+              <Input value="button" type="button" />
+              <Text type="label">{'<Input type="image" />'}</Text>
+              <Input value="image button" type="image" />
+              <Text type="subheading">html 5 input types</Text>
+              <Text type="label">{'<Input type="color" />'}</Text>
+              <Input value="color input" type="color" />
+              <Text type="label">{'<Input type="range" />'}</Text>
+              <Input value="range input" type="range" />
+            </Card>
           </div>
         </Layout>
       </Main>

@@ -1,28 +1,28 @@
 # Changelog
 
-## v0.0.10
+## v0.0.11
 
 ### Added
 
-- Button documentation page
-  - `~/routes/button.tsx`
-  - `~/islands/Navigation.tsx`
+- Documentation to input page
+  - `~/docs/atoms/input/default.md`
+  - `~/docs/atoms/input/description.md`
+  - `~/docs/atoms/input/label.md`
+  - `~/routes/atoms/input.tsx.md`
 
-- Adjustment to newspaper theme
-  - `~/routes/theme.tsx`
+- Obsidian to gitignore
+  - `~/.gitignore`
 
-- Updated Ana Components deps
-  - `~/routes/_app.tsx`
-  - `~/deps.ts`
+- `--allow-read` to the start script
+  - `~/deno.json`
 
 ### Removed
 
-- Deno Fresh out of the box Button component
-  - `~/components/Button.tsx`
+- Deno Fresh out of the box API
+  - `~/routes/api/joke.ts`
 
 ### Comming soon (v0.1.0)
 
 - Features
   - [ ] Content driven documentation using Sanity.io or raw md files.
   - [x] Migrate testing pages from the ana-components repo
-  - [ ] Create islands and components for the doc pages.

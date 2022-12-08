@@ -1,0 +1,1 @@
+It can be extended to have a  `<label>` element containing it. Additionally, inputs with the `required` property will have the standard required asterisk in a `<sup>` element next to the label.

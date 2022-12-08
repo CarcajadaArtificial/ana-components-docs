@@ -1,0 +1,1 @@
+The input component supports any attribute available for the input HTMLElement. In this example, the placeholder attribute is added.

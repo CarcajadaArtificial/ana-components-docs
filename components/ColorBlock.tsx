@@ -1,4 +1,3 @@
-import { Text } from "../deps.ts";
 import { JSX } from "preact";
 import type { Colors } from "../src/types.ts";
 
