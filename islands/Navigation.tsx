@@ -43,7 +43,7 @@ export default function (props: iNavigation) {
           onclick={() => setMenuIsOpen(!menuIsOpen)}
           links={links}
         >
-          <Text>☰</Text>
+          <Text noMargins>☰</Text>
         </Menu>
       </div>
     </Navigation>

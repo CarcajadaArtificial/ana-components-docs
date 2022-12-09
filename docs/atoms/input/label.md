@@ -1,1 +1,1 @@
-It can be extended to have a  `<label>` element containing it. Additionally, inputs with the `required` property will have the standard required asterisk in a `<sup>` element next to the label.
+It can be extended to have a label HTMLElement as a wrapper for the input. This way both the label and input are implicitly linked without the need for the attributes "id" and "for".

@@ -8,7 +8,7 @@ export default function App({ Component }: AppProps) {
         <title>Ana Components Docs</title>
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/CarcajadaArtificial/ana-components@0.0.25/static/styles.css"
+          href="https://cdn.jsdelivr.net/gh/CarcajadaArtificial/ana-components@0.0.29/static/styles.css"
           // href="/styles.css"
         />
       </Head>
