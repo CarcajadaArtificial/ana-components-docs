@@ -1,14 +1,9 @@
 # Changelog
 
-## v0.0.14
+## v0.0.15
 
-### Added
-
-- Minor updates
-  - `~/.gitignore`
-  - `~/deps.ts`
-  - `~/_app.ts`
-  - `~/docs/atoms/text/description.md`
+### Removed the automatic documentation from the input page
+  - `~/routes/atoms/input.tsx`
 
 ### Comming soon (v0.1.0)
 
