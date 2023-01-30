@@ -1,0 +1,1 @@
+The Text component is used for any type of phrasing content.
