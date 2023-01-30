@@ -12,6 +12,22 @@ import {
 } from "../../deps.ts";
 import Page from "../../components/Page.tsx";
 import Navigation from "../../islands/Navigation.tsx";
+import { getDoc } from "../../src/doc.ts";
+import { render } from "gfm";
+
+const doc = {
+  description: render(await getDoc("atoms/input", "description")),
+  default: render(await getDoc("atoms/input", "default")),
+  label: render(await getDoc("atoms/input", "label")),
+  error: render(await getDoc("atoms/input", "error")),
+  maxWidth: render(await getDoc("atoms/input", "maxWidth")),
+  placeholder: render(await getDoc("atoms/input", "placeholder")),
+  type: render(await getDoc("atoms/input", "type")),
+  required: render(await getDoc("atoms/input", "required")),
+  disabled: render(await getDoc("atoms/input", "disabled")),
+  checkbox: render(await getDoc("atoms/input", "checkbox")),
+  button: render(await getDoc("atoms/input", "button")),
+};
 
 export default function () {
   const selectOptions = ["Option one", "Option two", "Option three"];
@@ -19,85 +35,78 @@ export default function () {
     <Page>
       <Navigation fixed title="Input" />
       <Header>
-        <Text type="title">{"Input"}</Text>
-        <Text>{"doc.description"}</Text>
+        <div
+          class="markdown-prose"
+          dangerouslySetInnerHTML={{ __html: doc.description }}
+        />
       </Header>
       <Main>
         <Layout type="left">
           <div class="grid gap-8">
-            <Card>
-              <Text type="heading">Default input</Text>
-              <Text>{"doc.default"}</Text>
-              <Input label="Example label" value="Example value" />
-              <Code>{"<Input />"}</Code>
-            </Card>
-            <Card>
-              <Text type="heading">Component props</Text>
-              <Text type="subheading">label</Text>
-              <Text>{"doc.label"}</Text>
-              <Input label="First Name" value="Ana" />
-              <Code>{'<Input label="First Name" />'}</Code>
-              <Separator />
-              <Text type="subheading">error</Text>
-              <Text>{"doc.error"}</Text>
-              <Input
-                label="Username"
-                error="That username already exists."
-                value="foobar"
-              />
-              <Code>
-                {'<Input error="That username already exists." />'}
-              </Code>
-              <Separator />
-              <Text type="subheading">maxWidth</Text>
-              <Text>{"doc.maxWidth"}</Text>
-              <Input
-                maxWidth
-                label="Confirmation code (48 characters)"
-                value="KWLgzshgIq8RnisjA5DaJY6Vgs7uMywZItddDO0kffXFHuzy"
-              />
-              <Code>{"<Input maxWidth />"}</Code>
-            </Card>
-            <Card>
-              <Text type="heading">Element attributes</Text>
-              <Text type="subheading">placeholder</Text>
-              <Text>{"doc.placeholder"}</Text>
-              <Input label="First name" placeholder="Ana" />
-              <Code>
-                {'<Input placeholder="Ana" />'}
-              </Code>
-              <Separator />
-              <Text type="subheading">type</Text>
-              <Text>{"doc.type"}</Text>
-              <Input label="Date of birth" type="date" />
-              <Code>{'<Input type="date" />'}</Code>
-              <Separator />
-              <Text type="subheading">required</Text>
-              <Text>{"doc.required"}</Text>
-              <Input label="Confirm password" type="password" required />
-              <Code>{"<Input required />"}</Code>
-              <Separator />
-              <Text type="subheading">disabled</Text>
-              <Text>{"doc.disabled"}</Text>
-              <Input label="Forbidden input" disabled />
-              <Code>{"<Input disabled />"}</Code>
-            </Card>
-            <Card>
-              <Text type="heading">Other inputs</Text>
-              <Text type="subheading">checkbox and radio</Text>
-              <Text>{"doc.checkbox"}</Text>
-              <Code>{'<Input type="checkbox" />'}</Code>
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.default }}
+            />
+            <Input label="Example label" value="Example value" />
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.label }}
+            />
+            <Input label="First Name" value="Ana" />
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.error }}
+            />
+            <Input
+              label="Username"
+              error="That username already exists."
+              value="foobar"
+            />
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.maxWidth }}
+            />
+            <Input
+              maxWidth
+              label="Confirmation code (48 characters)"
+              value="KWLgzshgIq8RnisjA5DaJY6Vgs7uMywZItddDO0kffXFHuzy"
+            />
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.placeholder }}
+            />
+            <Input label="First name" placeholder="Ana" />
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.type }}
+            />
+            <Input label="Date of birth" type="date" />
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.required }}
+            />
+            <Input label="Confirm password" type="password" required />
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.disabled }}
+            />
+            <Input label="Forbidden input" disabled />
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.checkbox }}
+            />
+            <div>
               <Input label="checkbox" type="checkbox" />
-              <Code>{'<Input type="radio" />'}</Code>
               <Input label="radio" type="radio" />
-              <Separator />
-              <Text type="subheading">button</Text>
-              <Text>{"doc.button"}</Text>
-              <Code>{'<Input type="button" />'}</Code>
+            </div>
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.button }}
+            />
+            <div>
               <Input value="button" type="button" />
-              <Code>{'<Input type="image" />'}</Code>
               <Input value="image button" type="image" />
-            </Card>
+            </div>
           </div>
         </Layout>
       </Main>

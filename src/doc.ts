@@ -1,8 +1,7 @@
-export function getDocumentation(relativeUrl: string, fileNames: string[]) {
-  const doc: { [key: string]: string } = {};
-  const decoder = new TextDecoder('utf-8');
-  fileNames.forEach((name) => {
-    doc[name] = decoder.decode(Deno.readFileSync(relativeUrl + name + '.md'));
-  });
-  return doc;
-}
+import { join } from 'std/path/mod.ts';
+
+export const getDoc = async (
+  directory: string,
+  slug: string
+): Promise<string> =>
+  await Deno.readTextFile(join('./docs', directory, `${slug}.md`));

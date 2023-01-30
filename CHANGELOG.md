@@ -1,9 +1,24 @@
 # Changelog
 
-## v0.0.15
+## v0.0.16
 
-### Removed the automatic documentation from the input page
+### Added markdown reading implementation
+  - `~/import_map.json`
   - `~/routes/atoms/input.tsx`
+  - `~/src/doc.ts`
+
+### Updated the Input component docs
+  - `~/docs/atoms/input/button.md`
+  - `~/docs/atoms/input/checkbox.md`
+  - `~/docs/atoms/input/default.md`
+  - `~/docs/atoms/input/description.md`
+  - `~/docs/atoms/input/disabled.md`
+  - `~/docs/atoms/input/error.md`
+  - `~/docs/atoms/input/label.md`
+  - `~/docs/atoms/input/maxWidth.md`
+  - `~/docs/atoms/input/placeholder.md`
+  - `~/docs/atoms/input/required.md`
+  - `~/docs/atoms/input/type.md`
 
 ### Comming soon (v0.1.0)
 
