@@ -5,11 +5,13 @@ import {
   Header,
   Input,
   Layout,
+  LAYOUT_TYPES,
   Link,
   Main,
   Navigation,
   Select,
   Text,
+  TEXT_TYPES,
 } from "../deps.ts";
 import { allThemes, Theme } from "../src/types.ts";
 
@@ -21,7 +23,7 @@ export default function () {
     <div class="my-10">
       <Layout>
         <div>
-          <Text type="heading">Theme sampler</Text>
+          <Text type={TEXT_TYPES.HEADING}>Theme sampler</Text>
           <Select
             placeholder="newspaper"
             label="select theme"
@@ -47,13 +49,13 @@ export default function () {
             <Text>{selectedTheme}</Text>
           </Navigation>
           <Header>
-            <Text type="title">Theme Example</Text>
-            <Text type="paragraph">Theme example description</Text>
+            <Text type={TEXT_TYPES.TITLE}>Theme Example</Text>
+            <Text>Theme example description</Text>
           </Header>
           <Main>
             <Layout>
               <div>
-                <Text type="heading">Personal form</Text>
+                <Text type={TEXT_TYPES.HEADING}>Personal form</Text>
                 <form class="grid gap-4">
                   <Input
                     label="Full Name"
@@ -73,12 +75,12 @@ export default function () {
                 </form>
               </div>
             </Layout>
-            <Layout type="center">
+            <Layout type={LAYOUT_TYPES.CENTER}>
               <Card>
                 <div class="prose">
-                  <Text type="heading">Chapter I.</Text>
-                  <Text type="subheading">Down the Rabbit-Hole</Text>
-                  <Text type="paragraph">
+                  <Text type={TEXT_TYPES.HEADING}>Chapter I.</Text>
+                  <Text type={TEXT_TYPES.SUBHEADING}>Down the Rabbit-Hole</Text>
+                  <Text>
                     Alice was beginning to get very tired of sitting by her
                     sister on the bank, and of having nothing to do: once or
                     twice she had peeped into the book her sister was reading,
@@ -86,7 +88,7 @@ export default function () {
                     the use of a book,” thought Alice “without pictures or
                     conversations?”
                   </Text>
-                  <Text type="paragraph">
+                  <Text>
                     So she was considering in her own mind (as well as she
                     could, for the hot day made her feel very sleepy and
                     stupid), whether the pleasure of making a daisy-chain would

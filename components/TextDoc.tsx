@@ -1,8 +1,9 @@
 import { ComponentChildren } from "preact";
-import { Text, TextTypes } from "../deps.ts";
+import { TEXT_TYPES } from "../../ana-components/src/types/enums.ts";
+import { Text } from "../deps.ts";
 
 interface iTextDoc {
-  type: TextTypes;
+  type: TEXT_TYPES;
   testText: string;
   marginTop: string;
   marginBottom: string;

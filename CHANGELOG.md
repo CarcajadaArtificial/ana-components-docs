@@ -1,19 +1,26 @@
 # Changelog
 
-## v0.0.17
+## v0.0.18
 
-### Updated the Text component docs
+### Added `PAGE_THEME` enum
+  - `~/components/Page.tsx`
+
+### Added `TEXT_TYPES` enum
   - `~/components/TextDoc.tsx`
-  - `~/routes/atoms/text.tsx`
-  - `~/docs/atoms/text/description.md`
-  - `~/docs/atoms/text/display.md`
-  - `~/docs/atoms/text/heading.md`
-  - `~/docs/atoms/text/inheritColor.md`
-  - `~/docs/atoms/text/noMargins.md`
-  - `~/docs/atoms/text/paragraph.md`
-  - `~/docs/atoms/text/small.md`
-  - `~/docs/atoms/text/subheading.md`
-  - `~/docs/atoms/text/title.md`
+  - `~/islands/ColorDisplay.tsx`
+  - `~/islands/ThemeExample.tsx`
+
+### Added `LAYOUT_TYPES` enum
+  - `~/islands/ColorDisplay.tsx`
+  - `~/islands/ThemeExample.tsx`
+
+### Updated routes to use new enums
+  - `~/routes/color.tsx`
+  - `~/routes/input.tsx`
+  - `~/routes/text.tsx`
+  - `~/routes/theme.tsx`
+  - `~/routes/button.tsx`
+
 
 ### Comming soon (v0.1.0)
 

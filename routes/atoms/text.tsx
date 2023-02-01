@@ -1,13 +1,12 @@
 import {
-  Card,
-  Code,
   Footer,
   Header,
   Layout,
+  LAYOUT_TYPES,
   Link,
   Main,
-  Separator,
   Text,
+  TEXT_TYPES,
 } from "../../deps.ts";
 import Page from "../../components/Page.tsx";
 import TextDoc from "../../components/TextDoc.tsx";
@@ -38,7 +37,7 @@ export default function () {
         />
       </Header>
       <Main>
-        <Layout type="left">
+        <Layout type={LAYOUT_TYPES.LEFT}>
           <div class="grid gap-8">
             <div>
               <div
@@ -46,7 +45,7 @@ export default function () {
                 dangerouslySetInnerHTML={{ __html: doc.display }}
               />
               <TextDoc
-                type="display"
+                type={TEXT_TYPES.DISPLAY}
                 testText="Alice’s Adventures in Wonderland"
                 marginTop="2rem"
                 marginBottom="1rem"
@@ -58,7 +57,7 @@ export default function () {
                 dangerouslySetInnerHTML={{ __html: doc.title }}
               />
               <TextDoc
-                type="title"
+                type={TEXT_TYPES.TITLE}
                 testText="Alice’s Adventures in Wonderland"
                 marginTop="2rem"
                 marginBottom="1rem"
@@ -70,7 +69,7 @@ export default function () {
                 dangerouslySetInnerHTML={{ __html: doc.heading }}
               />
               <TextDoc
-                type="heading"
+                type={TEXT_TYPES.HEADING}
                 testText="Chapter I: Down the Rabbit-Hole"
                 marginTop="2rem"
                 marginBottom="1rem"
@@ -82,7 +81,7 @@ export default function () {
                 dangerouslySetInnerHTML={{ __html: doc.subheading }}
               />
               <TextDoc
-                type="subheading"
+                type={TEXT_TYPES.SUBHEADING}
                 testText="Chapter I: Down the Rabbit-Hole"
                 marginTop="2rem"
                 marginBottom="1rem"
@@ -94,7 +93,7 @@ export default function () {
                 dangerouslySetInnerHTML={{ __html: doc.paragraph }}
               />
               <TextDoc
-                type="paragraph"
+                type={TEXT_TYPES.PARAGRAPH}
                 testText="By Lewis Caroll"
                 marginTop="0.5rem"
                 marginBottom="1rem"
@@ -106,7 +105,7 @@ export default function () {
                 dangerouslySetInnerHTML={{ __html: doc.small }}
               />
               <TextDoc
-                type="small"
+                type={TEXT_TYPES.SMALL}
                 testText="THE MILLENNIUM FULCRUM EDITION 3.0"
                 marginTop="0"
                 marginBottom="0.5rem"
@@ -118,7 +117,7 @@ export default function () {
                 dangerouslySetInnerHTML={{ __html: doc.noMargins }}
               />
               <TextDoc
-                type="heading"
+                type={TEXT_TYPES.HEADING}
                 testText="Chapter I: Down the Rabbit-Hole"
                 marginTop="0"
                 marginBottom="0"

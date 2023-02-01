@@ -1,7 +1,14 @@
 import ColorBlock from "../components/ColorBlock.tsx";
 import ColorPair from "../components/ColorPair.tsx";
 import { orderedPalette, palette, paletteDisplay } from "../src/const.ts";
-import { Card, Input, Layout, Text } from "../deps.ts";
+import {
+  Card,
+  Input,
+  Layout,
+  LAYOUT_TYPES,
+  Text,
+  TEXT_TYPES,
+} from "../deps.ts";
 import type { Colors } from "../src/types.ts";
 import { useState } from "preact/hooks";
 
@@ -11,9 +18,9 @@ export default function () {
 
   return (
     <div>
-      <Layout type={selectedColor ? "right" : "focus"}>
+      <Layout type={selectedColor ? LAYOUT_TYPES.RIGHT : LAYOUT_TYPES.FOCUS}>
         <Card>
-          <Text type="heading">Color palette selector</Text>
+          <Text type={TEXT_TYPES.HEADING}>Color palette selector</Text>
           <Input
             type="checkbox"
             label="Order by hue and brightness"
@@ -44,13 +51,13 @@ export default function () {
         {selectedColor
           ? (
             <Card>
-              <Text type="heading">{selectedColor}</Text>
-              <Text type="paragraph">Color description</Text>
-              <Text type="label">
+              <Text type={TEXT_TYPES.HEADING}>{selectedColor}</Text>
+              <Text>Color description</Text>
+              <Text>
                 <strong>Hex:&nbsp;</strong>
                 <span>{palette[selectedColor].hex}</span>
               </Text>
-              <Text type="paragraph">
+              <Text>
                 <strong>RGB:&nbsp;</strong>
                 <span>
                   {`rgb(${palette[selectedColor].r}, ${
@@ -58,39 +65,39 @@ export default function () {
                   }, ${palette[selectedColor].b})`}
                 </span>
               </Text>
-              <Text type="paragraph">
+              <Text>
                 <strong>R:&nbsp;</strong>
                 <span>{palette[selectedColor].r}</span>
               </Text>
-              <Text type="paragraph">
+              <Text>
                 <strong>G:&nbsp;</strong>
                 <span>{palette[selectedColor].g}</span>
               </Text>
-              <Text type="paragraph">
+              <Text>
                 <strong>B:&nbsp;</strong>
                 <span>{palette[selectedColor].b}</span>
               </Text>
-              <Text type="paragraph">
+              <Text>
                 <strong>H:&nbsp;</strong>
                 <span>{palette[selectedColor].h}°</span>
               </Text>
-              <Text type="paragraph">
+              <Text>
                 <strong>S:&nbsp;</strong>
                 <span>{palette[selectedColor].s}%</span>
               </Text>
-              <Text type="paragraph">
+              <Text>
                 <strong>L:&nbsp;</strong>
                 <span>{palette[selectedColor].l}%</span>
               </Text>
               <div className="flex gap-2">
                 <div class="w-full">
-                  <Text type="paragraph">
+                  <Text>
                     <strong>Contrast vs blanco:&nbsp;</strong>
                     <span></span>
                   </Text>
                 </div>
                 <div class="w-full">
-                  <Text type="paragraph">
+                  <Text>
                     <strong>Contrast vs obsidiana:&nbsp;</strong>
                     <span></span>
                   </Text>
@@ -128,7 +135,7 @@ export default function () {
               </div>
               {palette[selectedColor].neighbors.map((neighbor) => (
                 <>
-                  <Text type="paragraph">{neighbor}</Text>
+                  <Text>{neighbor}</Text>
                   <ColorPair mainColor={selectedColor} pairedColor={neighbor} />
                 </>
               ))}

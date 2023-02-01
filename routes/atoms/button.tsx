@@ -1,12 +1,16 @@
 import {
   Button,
+  BUTTON_COLORS,
+  BUTTON_TYPES,
   Footer,
   Header,
   Input,
   Layout,
+  LAYOUT_TYPES,
   Link,
   Main,
   Text,
+  TEXT_TYPES,
 } from "../../deps.ts";
 import Page from "../../components/Page.tsx";
 import Navigation from "../../islands/Navigation.tsx";
@@ -16,35 +20,45 @@ export default function () {
     <Page>
       <Navigation fixed title="button" />
       <Header>
-        <Text type="title">{"Button"}</Text>
-        <Text type="paragraph">{"Button description."}</Text>
+        <Text type={TEXT_TYPES.TITLE}>{"Button"}</Text>
+        <Text>{"Button description."}</Text>
       </Header>
       <Main>
-        <Layout type="right">
+        <Layout type={LAYOUT_TYPES.RIGHT}>
           <Text>Default buttons</Text>
           <div class="grid gap-4">
-            <Button color="primary">Primary BG Button</Button>
-            <Button color="secondary">Secondary BG Button</Button>
-            <Button color="tertiary">Tertiary BG Button</Button>
-            <Button color="main">Main BG Button</Button>
-            <Button color="disabled">Disabled BG Button</Button>
-            <Button color="error">Error BG Button</Button>
+            <Button color={BUTTON_COLORS.PRIMARY}>Primary BG Button</Button>
+            <Button color={BUTTON_COLORS.SECONDARY}>Secondary BG Button</Button>
+            <Button color={BUTTON_COLORS.TERTIARY}>Tertiary BG Button</Button>
+            <Button color={BUTTON_COLORS.MAIN}>Main BG Button</Button>
+            <Button color={BUTTON_COLORS.DISABLED}>Disabled BG Button</Button>
+            <Button color={BUTTON_COLORS.ERROR}>Error BG Button</Button>
           </div>
         </Layout>
-        <Layout type="right">
+        <Layout type={LAYOUT_TYPES.RIGHT}>
           <Text>Outline buttons</Text>
           <div class="grid gap-4">
-            <Button type="outline" color="primary">Primary BG Button</Button>
-            <Button type="outline" color="secondary">
+            <Button type={BUTTON_TYPES.OUTLINE} color={BUTTON_COLORS.PRIMARY}>
+              Primary BG Button
+            </Button>
+            <Button type={BUTTON_TYPES.OUTLINE} color={BUTTON_COLORS.SECONDARY}>
               Secondary BG Button
             </Button>
-            <Button type="outline" color="tertiary">Tertiary BG Button</Button>
-            <Button type="outline" color="main">Main BG Button</Button>
-            <Button type="outline" color="disabled">Disabled BG Button</Button>
-            <Button type="outline" color="error">Error BG Button</Button>
+            <Button type={BUTTON_TYPES.OUTLINE} color={BUTTON_COLORS.TERTIARY}>
+              Tertiary BG Button
+            </Button>
+            <Button type={BUTTON_TYPES.OUTLINE} color={BUTTON_COLORS.MAIN}>
+              Main BG Button
+            </Button>
+            <Button type={BUTTON_TYPES.OUTLINE} color={BUTTON_COLORS.DISABLED}>
+              Disabled BG Button
+            </Button>
+            <Button type={BUTTON_TYPES.OUTLINE} color={BUTTON_COLORS.ERROR}>
+              Error BG Button
+            </Button>
           </div>
         </Layout>
-        <Layout type="right">
+        <Layout type={LAYOUT_TYPES.RIGHT}>
           <Text>Button Inputs</Text>
           <div class="grid gap-4">
             <Input type="button" value="input button" />
@@ -64,11 +78,11 @@ export default function () {
       </Main>
       <Footer>
         <Text>
-          Created by
+          Created by{" "}
+          <Link href="https://github.com/CarcajadaArtificial">
+            Oscar Alfonso Guerrero
+          </Link>
         </Text>
-        <Link href="https://github.com/CarcajadaArtificial">
-          Oscar Alfonso Guerrero
-        </Link>
       </Footer>
     </Page>
   );

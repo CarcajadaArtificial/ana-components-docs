@@ -1,5 +1,5 @@
 import { ComponentChildren } from "preact";
-import { Page } from "../deps.ts";
+import { Page, PAGE_THEME } from "../deps.ts";
 
 interface iPage {
   children?: ComponentChildren;
@@ -7,7 +7,7 @@ interface iPage {
 
 export default function (props: iPage) {
   return (
-    <Page theme="newspaper">
+    <Page theme={PAGE_THEME.NEWSPAPER}>
       {props.children}
     </Page>
   );

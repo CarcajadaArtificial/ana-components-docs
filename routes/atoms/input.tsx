@@ -5,6 +5,7 @@ import {
   Header,
   Input,
   Layout,
+  LAYOUT_TYPES,
   Link,
   Main,
   Separator,
@@ -41,7 +42,7 @@ export default function () {
         />
       </Header>
       <Main>
-        <Layout type="left">
+        <Layout type={LAYOUT_TYPES.LEFT}>
           <div class="grid gap-8">
             <div
               class="markdown-prose"
@@ -112,11 +113,11 @@ export default function () {
       </Main>
       <Footer>
         <Text>
-          Created by
+          Created by{" "}
+          <Link href="https://github.com/CarcajadaArtificial">
+            Oscar Alfonso Guerrero
+          </Link>
         </Text>
-        <Link href="https://github.com/CarcajadaArtificial">
-          Oscar Alfonso Guerrero
-        </Link>
       </Footer>
     </Page>
   );

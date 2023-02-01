@@ -1,4 +1,14 @@
-import { Card, Footer, Header, Layout, Link, Main, Text } from "../../deps.ts";
+import {
+  Card,
+  Footer,
+  Header,
+  Layout,
+  LAYOUT_TYPES,
+  Link,
+  Main,
+  Text,
+  TEXT_TYPES,
+} from "../../deps.ts";
 import Navigation from "../../islands/Navigation.tsx";
 import ThemeExample from "../../islands/ThemeExample.tsx";
 import Page from "../../components/Page.tsx";
@@ -9,15 +19,15 @@ export default function () {
     <Page>
       <Navigation fixed title="Theme" />
       <Header>
-        <Text type="title">Theme</Text>
-        <Text type="paragraph">
+        <Text type={TEXT_TYPES.TITLE}>Theme</Text>
+        <Text>
           Theme description
         </Text>
       </Header>
       <Main>
-        <Layout type="focus">
+        <Layout type={LAYOUT_TYPES.FOCUS}>
           <Card>
-            <Text type="heading">Themes</Text>
+            <Text type={TEXT_TYPES.HEADING}>Themes</Text>
             <Text>newspaper</Text>
             <div>
               <div class="grid grid-cols-10">
@@ -69,11 +79,11 @@ export default function () {
       </Main>
       <Footer>
         <Text>
-          Created by
+          Created by{" "}
+          <Link href="https://github.com/CarcajadaArtificial">
+            Oscar Alfonso Guerrero
+          </Link>
         </Text>
-        <Link href="https://github.com/CarcajadaArtificial">
-          Oscar Alfonso Guerrero
-        </Link>
       </Footer>
     </Page>
   );
