@@ -1,56 +1,53 @@
 import { ComponentChildren } from "preact";
-import { Card, Code, Separator, Text, TextTypes } from "../deps.ts";
+import { Text, TextTypes } from "../deps.ts";
 
 interface iTextDoc {
   type: TextTypes;
-  description: string;
   testText: string;
-  fontSize: string;
-  lineHeight: string;
-  fontWeight: string;
   marginTop: string;
   marginBottom: string;
 }
 
 export default function (props: iTextDoc) {
   return (
-    <Card>
-      <Text type="heading">{props.type}</Text>
-      <Text>{props.description}</Text>
-      <Separator />
-      <Text type={props.type} noMargins>
-        {props.testText}
-      </Text>
-      <Separator />
-      <Text type="subheading">Font Styles</Text>
-      <Code>
-        <Text inheritColor>font-size: {props.fontSize};</Text>
-        <Text inheritColor>line-height: {props.lineHeight};</Text>
-        <Text inheritColor>font-weight: {props.fontWeight};</Text>
-      </Code>
-      <Separator />
-      <Text type="subheading">Margins</Text>
-      <div class="grid">
-        <div
-          class="clr-bg-primary flex items-end"
-          style={`height: ${props.marginTop};`}
+    <div
+      class={`relative -top-4 grid clr-border border-1 rounded-r ${
+        props.marginTop === "0" ? "border-t-0" : null
+      } ${props.marginBottom === "0" ? "border-b-0" : null}`}
+    >
+      <div
+        class="clr-bg-secondary flex items-end rounded-t"
+        style={`height: ${props.marginTop};`}
+      >
+        <Text
+          noMargins
+          class="clr-bg-secondary px-1 rounded-t border-x-1 border-t-1 clr-border"
+          style="position: relative; left: -1px;"
         >
-          <Text noMargins type="small">margin-top: {props.marginTop};</Text>
-        </div>
-        <div class="overflow-hidden">
-          <Text type={props.type} noMargins class="whitespace-nowrap">
-            {props.testText}
-          </Text>
-        </div>
-        <div
-          class="clr-bg-primary flex items-start"
-          style={`height: ${props.marginBottom};`}
-        >
-          <Text noMargins type="small">
-            margin-bottom: {props.marginBottom};
-          </Text>
-        </div>
+          margin-top: {props.marginTop};
+        </Text>
       </div>
-    </Card>
+      <div class="overflow-hidden">
+        <Text
+          type={props.type}
+          noMargins
+          class="whitespace-nowrap border-y-1 clr-border pl-1"
+        >
+          {props.testText}
+        </Text>
+      </div>
+      <div
+        class="clr-bg-secondary flex items-start rounded-b"
+        style={`height: ${props.marginBottom};`}
+      >
+        <Text
+          noMargins
+          class="clr-bg-secondary px-1 rounded-b border-x-1 border-b-1 clr-border"
+          style="position: relative; left: -1px;"
+        >
+          margin-bottom: {props.marginBottom};
+        </Text>
+      </div>
+    </div>
   );
 }

@@ -1,24 +1,19 @@
 # Changelog
 
-## v0.0.16
+## v0.0.17
 
-### Added markdown reading implementation
-  - `~/import_map.json`
-  - `~/routes/atoms/input.tsx`
-  - `~/src/doc.ts`
-
-### Updated the Input component docs
-  - `~/docs/atoms/input/button.md`
-  - `~/docs/atoms/input/checkbox.md`
-  - `~/docs/atoms/input/default.md`
-  - `~/docs/atoms/input/description.md`
-  - `~/docs/atoms/input/disabled.md`
-  - `~/docs/atoms/input/error.md`
-  - `~/docs/atoms/input/label.md`
-  - `~/docs/atoms/input/maxWidth.md`
-  - `~/docs/atoms/input/placeholder.md`
-  - `~/docs/atoms/input/required.md`
-  - `~/docs/atoms/input/type.md`
+### Updated the Text component docs
+  - `~/components/TextDoc.tsx`
+  - `~/routes/atoms/text.tsx`
+  - `~/docs/atoms/text/description.md`
+  - `~/docs/atoms/text/display.md`
+  - `~/docs/atoms/text/heading.md`
+  - `~/docs/atoms/text/inheritColor.md`
+  - `~/docs/atoms/text/noMargins.md`
+  - `~/docs/atoms/text/paragraph.md`
+  - `~/docs/atoms/text/small.md`
+  - `~/docs/atoms/text/subheading.md`
+  - `~/docs/atoms/text/title.md`
 
 ### Comming soon (v0.1.0)
 
@@ -30,13 +25,14 @@
 - Fixes
   - [ ] The Card component background dilemma.
   - [ ] Button page scrolls down too far.
-  - [ ] Remove 
+  - [ ] Create a component for the doc's footer.
 
 - Documentation
   - Particles
     - [ ] Color
+    - [ ] Typography
   - Atoms
-    - [ ] Text
+    - [x] Text
     - [ ] Button
     - [ ] Card
     - [ ] Code
