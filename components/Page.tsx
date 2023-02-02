@@ -7,7 +7,7 @@ interface iPage {
 
 export default function (props: iPage) {
   return (
-    <Page theme={PAGE_THEME.NEWSPAPER}>
+    <Page darkMode theme={PAGE_THEME.NEWSPAPER}>
       {props.children}
     </Page>
   );
