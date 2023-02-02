@@ -1,12 +1,9 @@
 # Changelog
 
-## v0.0.20
+## v0.0.21
 
 ### Added minor updates
-  - `~/deps.ts`
-  - `~/routes/_app.tsx`
-  - `~/components/Page.tsx`
-
+  - `~/TextDoc.tsx`
 
 ### Comming soon (v0.1.0)
 

@@ -1,5 +1,4 @@
-import { ComponentChildren } from "preact";
-import { TEXT_TYPES } from "../../ana-components/src/types/enums.ts";
+import { TEXT_TYPES } from "../deps.ts";
 import { Text } from "../deps.ts";
 
 interface iTextDoc {
