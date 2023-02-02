@@ -1,6 +1,4 @@
 import {
-  Card,
-  Code,
   Footer,
   Header,
   Input,
@@ -8,7 +6,6 @@ import {
   LAYOUT_TYPES,
   Link,
   Main,
-  Separator,
   Text,
 } from "../../deps.ts";
 import Page from "../../components/Page.tsx";
@@ -31,7 +28,6 @@ const doc = {
 };
 
 export default function () {
-  const selectOptions = ["Option one", "Option two", "Option three"];
   return (
     <Page>
       <Navigation fixed title="Input" />

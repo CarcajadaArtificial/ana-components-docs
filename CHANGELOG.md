@@ -1,25 +1,11 @@
 # Changelog
 
-## v0.0.18
+## v0.0.19
 
-### Added `PAGE_THEME` enum
-  - `~/components/Page.tsx`
-
-### Added `TEXT_TYPES` enum
-  - `~/components/TextDoc.tsx`
-  - `~/islands/ColorDisplay.tsx`
-  - `~/islands/ThemeExample.tsx`
-
-### Added `LAYOUT_TYPES` enum
-  - `~/islands/ColorDisplay.tsx`
-  - `~/islands/ThemeExample.tsx`
-
-### Updated routes to use new enums
-  - `~/routes/color.tsx`
-  - `~/routes/input.tsx`
-  - `~/routes/text.tsx`
-  - `~/routes/theme.tsx`
-  - `~/routes/button.tsx`
+### Added minor updates
+  - `~/deps.ts`
+  - `~/roputes/_app.tsx`
+  - `~/roputes/atoms/input.tsx`
 
 
 ### Comming soon (v0.1.0)
