@@ -11,17 +11,15 @@ interface iTextDoc {
 export default function (props: iTextDoc) {
   return (
     <div
-      class={`relative -top-4 grid clr-border border-1 rounded-r ${
-        props.marginTop === "0" ? "border-t-0" : null
-      } ${props.marginBottom === "0" ? "border-b-0" : null}`}
+      class={`relative -top-4 grid`}
     >
       <div
-        class="clr-bg-secondary flex items-end rounded-t"
+        class="clr-bg-secondary pl-2 flex items-end rounded-t"
         style={`height: ${props.marginTop};`}
       >
         <Text
           noMargins
-          class="clr-bg-secondary px-1 rounded-t border-x-1 border-t-1 clr-border"
+          class="clr-bg-secondary px-1 rounded-t"
           style="position: relative; left: -1px;"
         >
           margin-top: {props.marginTop};
@@ -31,18 +29,17 @@ export default function (props: iTextDoc) {
         <Text
           type={props.type}
           noMargins
-          class="whitespace-nowrap border-y-1 clr-border pl-1"
         >
           {props.testText}
         </Text>
       </div>
       <div
-        class="clr-bg-secondary flex items-start rounded-b"
+        class="clr-bg-secondary pl-2 flex items-start rounded-b"
         style={`height: ${props.marginBottom};`}
       >
         <Text
           noMargins
-          class="clr-bg-secondary px-1 rounded-b border-x-1 border-b-1 clr-border"
+          class="clr-bg-secondary px-1 rounded-b"
           style="position: relative; left: -1px;"
         >
           margin-bottom: {props.marginBottom};

@@ -24,6 +24,8 @@ const doc = {
   small: render(await getDoc("atoms/text", "small")),
   noMargins: render(await getDoc("atoms/text", "noMargins")),
   inheritColor: render(await getDoc("atoms/text", "inheritColor")),
+  compact: render(await getDoc("atoms/text", "compact")),
+  aliceFirst: await getDoc("testTexts", "aliceFirst"),
 };
 
 export default function () {
@@ -127,6 +129,20 @@ export default function () {
               class="markdown-prose mt-4"
               dangerouslySetInnerHTML={{ __html: doc.inheritColor }}
             />
+            <div>
+              <div
+                class="markdown-prose"
+                dangerouslySetInnerHTML={{ __html: doc.compact }}
+              />
+              <div class="flex gap-4">
+                <Text noMargins>
+                  {doc.aliceFirst}
+                </Text>
+                <Text compact noMargins>
+                  {doc.aliceFirst}
+                </Text>
+              </div>
+            </div>
           </div>
         </Layout>
       </Main>
