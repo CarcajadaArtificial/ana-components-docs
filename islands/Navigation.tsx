@@ -33,18 +33,22 @@ export default function (props: iNavigation) {
 
   return (
     <Navigation fixed={props.fixed ? true : false}>
-      <Link href="/">Ana Component Docs</Link>
+      <span>
+        <Link href="/">Ana Component Docs</Link> 🧱
+      </span>
       <div class="flex">
         <div class="flex-1">
-          <Text>{props.title}</Text>
+          <Text noMargins>{props.title}</Text>
         </div>
-        <Menu
+        {
+          /* <Menu
           isOpen={menuIsOpen}
           onclick={() => setMenuIsOpen(!menuIsOpen)}
           links={links}
         >
           <Text noMargins>☰</Text>
-        </Menu>
+        </Menu> */
+        }
       </div>
     </Navigation>
   );

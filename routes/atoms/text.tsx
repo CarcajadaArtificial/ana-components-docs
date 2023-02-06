@@ -4,6 +4,7 @@ import {
   Layout,
   LAYOUT_TYPES,
   Link,
+  Linkmap,
   Main,
   Text,
   TEXT_TYPES,
@@ -13,6 +14,7 @@ import TextDoc from "../../components/TextDoc.tsx";
 import Navigation from "../../islands/Navigation.tsx";
 import { getDoc } from "../../src/doc.ts";
 import { render } from "gfm";
+import { LINKS_COMPONENT_TEXT } from "../../src/links.ts";
 
 const doc = {
   description: render(await getDoc("atoms/text", "description")),
@@ -36,6 +38,11 @@ export default function () {
         <div
           class="markdown-prose"
           dangerouslySetInnerHTML={{ __html: doc.description }}
+        />
+        <Linkmap
+          links={[
+            { name: "Table of contents", children: LINKS_COMPONENT_TEXT },
+          ]}
         />
       </Header>
       <Main>

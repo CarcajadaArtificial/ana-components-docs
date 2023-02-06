@@ -1,4 +1,4 @@
-### Component props
+### Component Props
 
 #### noMargins
 

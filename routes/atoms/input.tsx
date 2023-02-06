@@ -5,6 +5,7 @@ import {
   Layout,
   LAYOUT_TYPES,
   Link,
+  Linkmap,
   Main,
   Text,
 } from "../../deps.ts";
@@ -12,10 +13,10 @@ import Page from "../../components/Page.tsx";
 import Navigation from "../../islands/Navigation.tsx";
 import { getDoc } from "../../src/doc.ts";
 import { render } from "gfm";
+import { LINKS_COMPONENT_INPUT } from "../../src/links.ts";
 
 const doc = {
   description: render(await getDoc("atoms/input", "description")),
-  default: render(await getDoc("atoms/input", "default")),
   label: render(await getDoc("atoms/input", "label")),
   error: render(await getDoc("atoms/input", "error")),
   maxWidth: render(await getDoc("atoms/input", "maxWidth")),
@@ -32,19 +33,22 @@ export default function () {
     <Page>
       <Navigation fixed title="Input" />
       <Header>
-        <div
-          class="markdown-prose"
-          dangerouslySetInnerHTML={{ __html: doc.description }}
+        <div>
+          <div
+            class="markdown-prose mb-4"
+            dangerouslySetInnerHTML={{ __html: doc.description }}
+          />
+          <Input label="Example label" value="Example value" />
+        </div>
+        <Linkmap
+          links={[
+            { name: "Table of contents", children: LINKS_COMPONENT_INPUT },
+          ]}
         />
       </Header>
       <Main>
         <Layout type={LAYOUT_TYPES.LEFT}>
           <div class="grid gap-8">
-            <div
-              class="markdown-prose"
-              dangerouslySetInnerHTML={{ __html: doc.default }}
-            />
-            <Input label="Example label" value="Example value" />
             <div
               class="markdown-prose"
               dangerouslySetInnerHTML={{ __html: doc.label }}

@@ -1,18 +1,35 @@
 # Changelog
 
-## v0.0.22
+## v0.0.23
 
 ### Added minor updates
   - `~/deps.ts`
-  - `~/routes/_app.ts`
 
-### Updated the text component page with the new `compact` property
-  - `~/docs/atoms/text/compact.md`
-  - `~/docs/testTexts/aliceFirst.md`
-  - `~/routes/atoms/text.tsx`
+### Updated the button component page documentation
+  - `~/docs/atoms/button/color.md`
+  - `~/docs/atoms/button/description.md`
+  - `~/docs/atoms/button/input.md`
+  - `~/routes/atoms/button.tsx`
+
+### Updated the input component page documentation
+  - `~/docs/atoms/input/noMargins.md`
+  - `~/docs/atoms/input/description.md`
+  - `~/routes/atoms/input.tsx`
+
+### Removed the menu from the navigation bar.
+  - `~/islands/Navigation.tsx`
+
+### Added a project home page
+  - `~/routes/index.tsx`
 
 ### Updated the TextDoc component look
   - `~/components/TextDoc.tsx`
+
+### Added the Linkmap component to the page
+  - `~/routes/atoms/input.tsx`
+  - `~/routes/atoms/button.tsx`
+  - `~/routes/atoms/text.tsx`
+  - `~/src/links.ts`
 
 ### Comming soon (v0.1.0)
 
@@ -32,7 +49,7 @@
     - [ ] Typography
   - Atoms
     - [x] Text
-    - [ ] Button
+    - [x] Button
     - [ ] Card
     - [ ] Code
     - [ ] Link
