@@ -91,7 +91,7 @@ export default function () {
               class="markdown-prose"
               dangerouslySetInnerHTML={{ __html: doc.disabled }}
             />
-            <Input label="Forbidden input" disabled />
+            <Input label="Forbidden input" disabled value="Disabled value" />
             <div
               class="markdown-prose"
               dangerouslySetInnerHTML={{ __html: doc.checkbox }}

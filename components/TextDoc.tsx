@@ -14,12 +14,12 @@ export default function (props: iTextDoc) {
       class={`relative -top-4 grid`}
     >
       <div
-        class="clr-bg-secondary pl-2 flex items-end rounded-t"
+        class="clr-bg-panel pl-2 flex items-end rounded-t"
         style={`height: ${props.marginTop};`}
       >
         <Text
           noMargins
-          class="clr-bg-secondary px-1 rounded-t"
+          class="clr-bg-panel px-1 rounded-t"
           style="position: relative; left: -1px;"
         >
           margin-top: {props.marginTop};
@@ -34,12 +34,12 @@ export default function (props: iTextDoc) {
         </Text>
       </div>
       <div
-        class="clr-bg-secondary pl-2 flex items-start rounded-b"
+        class="clr-bg-panel pl-2 flex items-start rounded-b"
         style={`height: ${props.marginBottom};`}
       >
         <Text
           noMargins
-          class="clr-bg-secondary px-1 rounded-b"
+          class="clr-bg-panel px-1 rounded-b"
           style="position: relative; left: -1px;"
         >
           margin-bottom: {props.marginBottom};

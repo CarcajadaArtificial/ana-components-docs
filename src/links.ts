@@ -24,25 +24,6 @@ export const LINKS_PARTICLES: ItemLink[] = [
   },
 ];
 
-export const LINKS_PANEL_ATOMS = [
-  {
-    name: 'card',
-    // url: '/atoms/card',
-  },
-  {
-    name: 'footer',
-    // url: '/particles/footer',
-  },
-  {
-    name: 'header',
-    // url: '/particles/header',
-  },
-  {
-    name: 'main',
-    // url: '/particles/main',
-  },
-];
-
 export const LINKS_INTERACTIVE_ATOMS = [
   {
     name: 'button',
@@ -91,16 +72,20 @@ export const LINKS_ARCHITECTURE_ATOMS = [
     // url: '/particles/page',
   },
   {
+    name: 'panel',
+    // url: '/particles/panel',
+  },
+  {
+    name: 'main',
+    // url: '/particles/main',
+  },
+  {
     name: 'separator',
     // url: '/particles/separator',
   },
 ];
 
 export const LINKS_ATOMS: ItemLink[] = [
-  {
-    name: 'Panel',
-    children: LINKS_PANEL_ATOMS,
-  },
   {
     name: 'Interactive',
     children: LINKS_INTERACTIVE_ATOMS,
@@ -117,8 +102,20 @@ export const LINKS_ATOMS: ItemLink[] = [
 
 export const LINKS_MOLECULES: ItemLink[] = [
   {
+    name: 'card',
+    // url: '/atoms/card',
+  },
+  {
     name: 'fieldset',
     // url: '/particles/fieldset',
+  },
+  {
+    name: 'footer',
+    // url: '/particles/footer',
+  },
+  {
+    name: 'header',
+    // url: '/particles/header',
   },
   {
     name: 'linkmap',

@@ -8,11 +8,13 @@ export default function App({ Component }: AppProps) {
         <title>Ana Components Docs</title>
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/CarcajadaArtificial/ana-components@0.0.38/static/styles.css"
+          href="https://cdn.jsdelivr.net/gh/CarcajadaArtificial/ana-components@0.0.42/static/styles.css"
           // href="/styles.css"
         />
       </Head>
-      <Component />
+      <body class="test">
+        <Component />
+      </body>
     </>
   );
 }

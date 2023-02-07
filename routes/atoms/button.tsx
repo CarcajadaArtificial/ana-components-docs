@@ -1,6 +1,6 @@
 import {
   Button,
-  BUTTON_COLORS,
+  BUTTON_TYPES,
   Card,
   Footer,
   Header,
@@ -50,44 +50,38 @@ export default function () {
               <div className="flex items-center gap-4 -mt-4">
                 <Card>
                   <div class="grid gap-4">
-                    <Button color={BUTTON_COLORS.PRIMARY}>
-                      Primary BG Button
+                    <Button>
+                      Contrast
                     </Button>
-                    <Button color={BUTTON_COLORS.SECONDARY}>
-                      Primary BG Button
+                    <Button color={BUTTON_TYPES.PANEL}>
+                      Panel
                     </Button>
-                    <Button color={BUTTON_COLORS.TERTIARY}>
-                      Primary BG Button
+                    <Button color={BUTTON_TYPES.INVISIBLE}>
+                      Invisible
                     </Button>
-                    <Button color={BUTTON_COLORS.MAIN}>
-                      Primary BG Button
+                    <Button color={BUTTON_TYPES.DISABLED}>
+                      Disabled
                     </Button>
-                    <Button color={BUTTON_COLORS.DISABLED}>
-                      Primary BG Button
-                    </Button>
-                    <Button color={BUTTON_COLORS.ERROR}>
-                      Primary BG Button
+                    <Button color={BUTTON_TYPES.ERROR}>
+                      Error
                     </Button>
                   </div>
                 </Card>
                 <div className="grid gap-4 ml-4">
-                  <Button color={BUTTON_COLORS.PRIMARY}>
-                    Primary BG Button
+                  <Button>
+                    Contrast
                   </Button>
-                  <Button color={BUTTON_COLORS.SECONDARY}>
-                    Primary BG Button
+                  <Button color={BUTTON_TYPES.PANEL}>
+                    Panel
                   </Button>
-                  <Button color={BUTTON_COLORS.TERTIARY}>
-                    Primary BG Button
+                  <Button color={BUTTON_TYPES.INVISIBLE}>
+                    Invisible
                   </Button>
-                  <Button color={BUTTON_COLORS.MAIN}>
-                    Primary BG Button
+                  <Button color={BUTTON_TYPES.DISABLED}>
+                    Disabled
                   </Button>
-                  <Button color={BUTTON_COLORS.DISABLED}>
-                    Primary BG Button
-                  </Button>
-                  <Button color={BUTTON_COLORS.ERROR}>
-                    Primary BG Button
+                  <Button color={BUTTON_TYPES.ERROR}>
+                    Error
                   </Button>
                 </div>
               </div>
