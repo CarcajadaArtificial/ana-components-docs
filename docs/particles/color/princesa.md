@@ -1,0 +1,2 @@
+### princesa
+`/pɾinθˈesa/` The light pink hue of a fairy tale princess dress is a delicate blush, evoking the softness and innocence of a summer rose. It is a hue that whispers of romance, of a magical kingdom and its inhabitants. The color seems to glow, like a beacon of hope in a land filled with wonder and enchantment. It speaks of a young heroine, on a journey of self-discovery and bravery, guided by love and kindness. The light pink of a fairy tale princess dress is a symbol of all that is pure, magical, and beautiful in the world.

@@ -1,0 +1,2 @@
+### lapis
+`/lˈapis/`  The tone of lapis lazuli is a rich, deep shade, like the mysterious depths of the ocean. The blue of lapis lazuli is a shade of intense saturation, a vivid representation of the mineral's beauty and rarity. It is a color that speaks of wisdom and truth, of the pursuit of knowledge and the quest for understanding. It is a symbol of the beauty that lies within the earth and beyond the horizon.

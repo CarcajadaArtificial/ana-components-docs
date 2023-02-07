@@ -2,62 +2,38 @@ import ColorBlock from "../components/ColorBlock.tsx";
 import ColorPair from "../components/ColorPair.tsx";
 import { orderedPalette, palette, paletteDisplay } from "../src/const.ts";
 import {
-  Card,
   Input,
   Layout,
   LAYOUT_TYPES,
+  Separator,
   Text,
   TEXT_TYPES,
 } from "../deps.ts";
 import type { Colors } from "../src/types.ts";
 import { useState } from "preact/hooks";
 
-export default function () {
+export default function (doc: { [key in Colors]: string }) {
   const [ordered, setOrdered] = useState<boolean>(true);
   const [selectedColor, setSelectedColor] = useState<Colors | null>(null);
 
   return (
     <div>
-      <Layout type={selectedColor ? LAYOUT_TYPES.RIGHT : LAYOUT_TYPES.FOCUS}>
-        <Card>
-          <Text type={TEXT_TYPES.HEADING}>Color palette selector</Text>
-          <Input
-            type="checkbox"
-            label="Order by hue and brightness"
-            onClick={() => setOrdered(!ordered)}
-          />
-          <div class="grid grid-cols-10">
-            {ordered
-              ? paletteDisplay.flat().map((color) => (
-                <ColorBlock
-                  color={color}
-                  onClick={() =>
-                    setSelectedColor(
-                      color === null ? selectedColor : color,
-                    )}
-                />
-              ))
-              : orderedPalette.flat().map((color) => (
-                <ColorBlock
-                  color={color}
-                  onClick={() =>
-                    setSelectedColor(
-                      color === null ? selectedColor : color,
-                    )}
-                />
-              ))}
-          </div>
-        </Card>
+      <Layout type={selectedColor ? LAYOUT_TYPES.LEFT : LAYOUT_TYPES.FOCUS}>
         {selectedColor
           ? (
-            <Card>
-              <Text type={TEXT_TYPES.HEADING}>{selectedColor}</Text>
-              <Text>Color description</Text>
-              <Text>
+            <div>
+              <div
+                class="markdown-prose"
+                dangerouslySetInnerHTML={{
+                  __html: doc[selectedColor],
+                }}
+              />
+              <Separator />
+              <Text noMargins>
                 <strong>Hex:&nbsp;</strong>
                 <span>{palette[selectedColor].hex}</span>
               </Text>
-              <Text>
+              <Text noMargins>
                 <strong>RGB:&nbsp;</strong>
                 <span>
                   {`rgb(${palette[selectedColor].r}, ${
@@ -65,39 +41,24 @@ export default function () {
                   }, ${palette[selectedColor].b})`}
                 </span>
               </Text>
-              <Text>
-                <strong>R:&nbsp;</strong>
-                <span>{palette[selectedColor].r}</span>
+              <Text noMargins>
+                <strong>HSL:&nbsp;</strong>
+                <span>
+                  {`hsl(${palette[selectedColor].h}, ${
+                    palette[selectedColor].s
+                  }, ${palette[selectedColor].l})`}
+                </span>
               </Text>
-              <Text>
-                <strong>G:&nbsp;</strong>
-                <span>{palette[selectedColor].g}</span>
-              </Text>
-              <Text>
-                <strong>B:&nbsp;</strong>
-                <span>{palette[selectedColor].b}</span>
-              </Text>
-              <Text>
-                <strong>H:&nbsp;</strong>
-                <span>{palette[selectedColor].h}°</span>
-              </Text>
-              <Text>
-                <strong>S:&nbsp;</strong>
-                <span>{palette[selectedColor].s}%</span>
-              </Text>
-              <Text>
-                <strong>L:&nbsp;</strong>
-                <span>{palette[selectedColor].l}%</span>
-              </Text>
+              <Separator />
               <div className="flex gap-2">
                 <div class="w-full">
-                  <Text>
+                  <Text noMargins>
                     <strong>Contrast vs blanco:&nbsp;</strong>
                     <span></span>
                   </Text>
                 </div>
                 <div class="w-full">
-                  <Text>
+                  <Text noMargins>
                     <strong>Contrast vs obsidiana:&nbsp;</strong>
                     <span></span>
                   </Text>
@@ -139,9 +100,38 @@ export default function () {
                   <ColorPair mainColor={selectedColor} pairedColor={neighbor} />
                 </>
               ))}
-            </Card>
+            </div>
           )
           : null}
+        <div class="bg-obsidiana p-8 rounded clr-border border-1">
+          <Text type={TEXT_TYPES.HEADING}>Color palette selector</Text>
+          <Input
+            type="checkbox"
+            label="Order by hue and brightness"
+            onClick={() => setOrdered(!ordered)}
+          />
+          <div class="grid grid-cols-10">
+            {ordered
+              ? paletteDisplay.flat().map((color) => (
+                <ColorBlock
+                  color={color}
+                  onClick={() =>
+                    setSelectedColor(
+                      color === null ? selectedColor : color,
+                    )}
+                />
+              ))
+              : orderedPalette.flat().map((color) => (
+                <ColorBlock
+                  color={color}
+                  onClick={() =>
+                    setSelectedColor(
+                      color === null ? selectedColor : color,
+                    )}
+                />
+              ))}
+          </div>
+        </div>
       </Layout>
     </div>
   );

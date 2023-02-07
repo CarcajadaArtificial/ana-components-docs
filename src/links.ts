@@ -8,7 +8,7 @@ import { ItemLink } from '../deps.ts';
 export const LINKS_PARTICLES: ItemLink[] = [
   {
     name: 'color',
-    // url: '/particles/color',
+    url: '/particles/color',
   },
   {
     name: 'font',

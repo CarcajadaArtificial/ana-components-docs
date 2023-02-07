@@ -1,0 +1,2 @@
+### kawaii
+`/kawˈa͡ɪi/`

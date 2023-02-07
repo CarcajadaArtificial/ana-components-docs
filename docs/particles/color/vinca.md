@@ -1,0 +1,2 @@
+### vinca
+`/bˈinka/`

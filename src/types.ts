@@ -42,7 +42,7 @@ export type Colors =
   | 'plata'
   | 'lavanda'
   | 'cajeta'
-  | 'wasabi'
+  | 'alien'
   | 'princesa'
   | 'nube';
 

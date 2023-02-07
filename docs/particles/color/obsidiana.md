@@ -1,0 +1,2 @@
+### obsidiana
+`/ˌoβsiðjˈana/`

@@ -124,7 +124,7 @@ export const palette: Palette = {
     h: 65,
     s: 100,
     l: 80,
-    neighbors: ['arena', 'wasabi'],
+    neighbors: ['arena', 'alien'],
   },
   chapopote: {
     hex: '#241f26',
@@ -154,7 +154,7 @@ export const palette: Palette = {
     h: 100,
     s: 77,
     l: 70,
-    neighbors: ['wasabi', 'mota'],
+    neighbors: ['alien', 'mota'],
   },
   cobalto: {
     hex: '#1262b3',
@@ -446,7 +446,7 @@ export const palette: Palette = {
     l: 42,
     neighbors: ['ambar'],
   },
-  wasabi: {
+  alien: {
     hex: '#d0fa7d',
     r: 208,
     g: 250,
@@ -488,11 +488,11 @@ export const orderedPalette: (Colors | null)[][] = [
   // prettier-ignore
   ['borrador','fresa',null,null,null,'limon',null,'detergente','lavanda','hierro'],
   // prettier-ignore
-  [null,'chicle','ambar','flan',null,'mota','menta',null,'magia','acero'],
+  [null,'chicle','ambar',null,null,'mota','menta',null,'magia','acero'],
   // prettier-ignore
-  ['kawaii','bombon',null,'tortilla',null,'musgo','hielo','cielo','princesa','plata'],
+  ['kawaii','bombon','flan','tortilla',null,'musgo','hielo','cielo','princesa','plata'],
   // prettier-ignore
-  [null,'pastel',null,'arena','mantequilla','wasabi',null,'vinca','nube','papel'],
+  [null,'pastel',null,'arena','mantequilla','alien',null,'vinca','nube','papel'],
   // prettier-ignore
   [null,null,null,null,null,null,null,null,null,'blanco'],
 ];
@@ -513,5 +513,5 @@ export const paletteDisplay: (Colors | null)[][] = [
   // prettier-ignore
   ['turquesa',null,null,'musgo',null,null,'flan',null,'papel',null],
   // prettier-ignore
-  ['menta','hielo',null,'wasabi','mantequilla','arena','tortilla',null,'blanco',null],
+  ['menta','hielo',null,'alien','mantequilla','arena','tortilla',null,'blanco',null],
 ];

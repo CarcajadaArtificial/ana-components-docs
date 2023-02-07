@@ -1,16 +1,21 @@
 # Changelog
 
-## v0.0.24
+## v0.0.25
+
+### Moved the `color.tsx` page from `atoms` to `particles`
+  - `~/routes/particles/color.tsx`
+
+### Added color page documentation
+  - `~/docs/particles/color/*.md`
+  - `~/src/links.ts`
 
 ### Added minor updates
-  - `~/deps.ts`
-  - `~/src/links.ts`
+  - `~/fresh.gen.ts`
   - `~/routes/_app.tsx`
-  - `~/routes/input.tsx`
-  - `~/routes/button.tsx`
-  - `~/components/Page.tsx`
-  - `~/components/TextDoc.tsx`
+  - `~/src/const.ts`
+  - `~/src/types.ts`
   - `~/components/ColorBlock.tsx`
+  - `~/islands/ColorDisplay.tsx`
 
 ### Comming soon (v0.1.0)
 

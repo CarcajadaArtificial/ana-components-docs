@@ -1,0 +1,2 @@
+### uva
+`/ˈuβa/` The color of a grape is a rich, decadent hue, a feast for the eyes, and a symphony for the senses. It is a shade that embodies luxury and royalty, a vivid reminder of the regal splendor of bygone eras. The deep purple of a grape is a saturated shade, a color that seems to hold within it the essence of the vineyard and the sun-drenched earth. It is a hue that suggests richness, depth, and complexity, a visual representation of the fullness of life and the abundance of the harvest.

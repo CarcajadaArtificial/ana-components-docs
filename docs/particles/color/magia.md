@@ -1,0 +1,2 @@
+### magia
+`/mˈaxja/` The hue of magic is an enigmatic, beguiling shade, steeped in mystery and wonder. It is a color that shimmers with a beguiling light, evoking the secrets of the universe and the mystical forces that govern it. It is a hue that whispers of enchanted realms and ancient spells, a kaleidoscope of potential waiting to be unlocked. This tone is a symphony of the imagination, a symposium of the soul, and a visual representation of the ethereal and the extraordinary. It is a color that inspires awe, wonder, and a sense of boundless possibility.
