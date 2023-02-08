@@ -1,2 +1,2 @@
 ### plata
-`/plˈata/`
+`/plˈata/` The color of silver is a luminous, radiant hue, like the glimmer of moonlight on a calm sea or the shimmer of a star in the sky. It is a color that embodies grace and elegance, a hue that suggests sophistication and refinement. The silver shade is a cool, gleaming tone of ethereal saturation, a visual representation of the metal's timeless beauty and preciousness. It is a color that speaks of wealth and prosperity, of the allure of the rare and the valuable. It is a visual expression of the human pursuit of beauty and excellence, a symbol of the unyielding quest for the finer things in life.

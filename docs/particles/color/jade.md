@@ -1,2 +1,2 @@
 ### jade
-`/xˈaðe/`
+`/xˈaðe/` This color embodies the essence of serenity and elegance, a hue that suggests the richness of ancient cultures and the timeless beauty of nature. It represents the balance and harmony that has long been associated with the gemstone and inspires thoughts of prosperity and well-being.

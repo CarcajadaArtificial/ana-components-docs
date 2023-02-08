@@ -1,2 +1,2 @@
 ### vinca
-`/bˈinka/`
+`/bˈinka/` Like the fleeting beauty of a summer's day or the gentle flutter of a butterfly's wings this color embodies grace and serenity. It is a soft, translucent tone of ethereal saturation, a visual representation of the flower's gentle and fleeting beauty. It is a color that speaks of transience and the fleeting nature of life, of the importance of cherishing every moment. The human appreciation for the delicate and ephemeral aspects of existence is symbolized by this color. It is a shade that inspires awe and contemplation, a reminder of the fleeting nature of life and the need to find meaning in the face of transience.

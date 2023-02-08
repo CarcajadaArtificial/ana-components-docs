@@ -1,2 +1,2 @@
 ### acero
-`/aθˈeɾo/` 
+`/aθˈeɾo/` The color of steel is a sleek, polished shade, like the gleam of a knife's edge. It is a color that embodies strength and resilience and suggests durability and unwavering power. The steel gray is a shade of cool and calculated saturation, a visual representation of the metal's strength and versatility. It is a color that speaks of efficiency and dependability, of the relentless pursuit of progress and the unrelenting quest for excellence. The steel gray is a visual expression of the human drive to create and build, a symbol of the boundless potential of the human mind and the power of the human spirit.

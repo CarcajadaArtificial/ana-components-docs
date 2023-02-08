@@ -67,38 +67,38 @@ export default function (doc: { [key in Colors]: string }) {
               <div className="grid grid-cols-2 gap-2">
                 <div class="w-full">
                   <span
-                    className={`block bg-${selectedColor} text-blanco py-2 px-3 rounded`}
+                    className={`block bg-${selectedColor} txt-blanco py-2 px-3 rounded`}
                   >
                     Example text
                   </span>
                 </div>
                 <div class="w-full">
                   <span
-                    className={`block bg-${selectedColor} text-obsidiana py-2 px-3 rounded`}
+                    className={`block bg-${selectedColor} txt-obsidiana py-2 px-3 rounded`}
                   >
                     Example text
                   </span>
                 </div>
                 <div class="w-full">
                   <span
-                    className={`block text-${selectedColor} bg-blanco py-2 px-3 rounded`}
+                    className={`block txt-${selectedColor} bg-blanco py-2 px-3 rounded`}
                   >
                     Example text
                   </span>
                 </div>
                 <div class="w-full">
                   <span
-                    className={`block text-${selectedColor} bg-obsidiana py-2 px-3 rounded`}
+                    className={`block txt-${selectedColor} bg-obsidiana py-2 px-3 rounded`}
                   >
                     Example text
                   </span>
                 </div>
               </div>
               {palette[selectedColor].neighbors.map((neighbor) => (
-                <>
-                  <Text>{neighbor}</Text>
+                <div class="mt-4">
+                  <Text noMargins>{neighbor}</Text>
                   <ColorPair mainColor={selectedColor} pairedColor={neighbor} />
-                </>
+                </div>
               ))}
             </div>
           )
@@ -115,19 +115,17 @@ export default function (doc: { [key in Colors]: string }) {
               ? paletteDisplay.flat().map((color) => (
                 <ColorBlock
                   color={color}
-                  onClick={() =>
-                    setSelectedColor(
-                      color === null ? selectedColor : color,
-                    )}
+                  onMouseDown={color === null
+                    ? (e) => e.preventDefault()
+                    : () => setSelectedColor(color)}
                 />
               ))
               : orderedPalette.flat().map((color) => (
                 <ColorBlock
                   color={color}
-                  onClick={() =>
-                    setSelectedColor(
-                      color === null ? selectedColor : color,
-                    )}
+                  onMouseDown={color === null
+                    ? (e) => e.preventDefault()
+                    : () => setSelectedColor(color)}
                 />
               ))}
           </div>

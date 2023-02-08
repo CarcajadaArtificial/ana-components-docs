@@ -1,2 +1,2 @@
 ### marino
-`/maɾˈino/`
+`/maɾˈino/` The deep ocean has a shade of blue so dark and rich, so intense and mysterious, that it inspires a sense of awe and reverence in those who behold it, speaks of the enormity of the ocean's depths and the infinite beauty of the natural world, embodies the majesty and power of the sea, and hints at the mysteries that still lie hidden within its inky depths.

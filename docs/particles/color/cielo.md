@@ -1,2 +1,2 @@
 ### cielo
-`/θjˈelo/`
+`/θjˈelo/` It is a tranquil, serene hue, that embodies peace, serenity, and ease. It has a light, airy tone of tranquil saturation. It is a symbol of the unrelenting pursuit of peace and happiness. It is a shade that inspires wonder and aspiration.
