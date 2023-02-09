@@ -1,17 +1,10 @@
 # Changelog
 
-## v0.0.28
+## v0.0.29
 
-### Added the `single` property to the Text component documentation page
-  - `routes/atoms/text.tsx`
-  - `docs/atoms/text/single.md`
-  - `src/links.ts`
-
-### Added minor updates
-  - `import_map.json`
-  - `routes/_app.tsx`
-  - `src/links.ts`
-  - `components/TextDoc.tsx`
+### Updated documentation
+  - `docs/atoms/input/*.md`
+  - `docs/atoms/text/*.md`
 
 ### Comming soon (v0.1.0)
 

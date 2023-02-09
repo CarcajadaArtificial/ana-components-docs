@@ -1,12 +1,13 @@
 #### heading
 
-A *heading* type is one intended for titles for sections of a page. You can have more than one *heading* because they are meant to name multiple parts of a page.
+A *heading* type is one intended to divide the content into manageable sections and provide structure to a page. It guides the user's understanding of the content. You can have more than one *heading* because they are meant to identify multiple parts of a page.
 
-* Component
+#### `[JSX]` Component
   ```html
 <Text type="heading">Chapter I: Down the Rabbit-Hole</Text>
 ```
-* Style
+
+#### `[CSS]` Style
   ```css
 span.heading {
 	font-size: 2rem;
@@ -14,4 +15,5 @@ span.heading {
 	font-weight: 600;
 }
 ```
+
 * Example with visible margins

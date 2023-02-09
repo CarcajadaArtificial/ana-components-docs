@@ -1,16 +1,16 @@
 ### type
-
-The `type` property is the one that changes the text's style. Font sizes were modularly scaled and line heights were rounded and hand-adjusted. Also, anything greater than a paragraph (base text) is set to bold.
+Each type of text serves a unique purpose, and when used in concert, they form a symphony of information, guiding the user through the labyrinth of digital interfaces. Their precise and calculated placement, size, and style, hold the power to convey meaning, evoke emotions, and inspire action.
 
 #### display
+The *display* text type is the largest of them all. It is used for impactful text that requires a larger amount of screenspace to convey an extremely important message. It is an opportunity to create visual impact and set the tone for the overall design. I think things like brand mottos, hot takes, or one-sentence announcement work great for a *display* type. It represents the designer's voice and intention, guiding the user's experience. 
+* **Avoid this text type on devices with smaller screens.** 
 
-The *display* text type is the largest of them all. It is used for impactful text that requires a larger amount of screenspace to convey an extremely important message. I think things like brand mottos, hot takes, or one-sentence announcement work great for a *display* type. **Avoid this text type on devices with smaller screens.**
-
-* Component
+#### `[JSX]` Component
   ```html
 <Text type="display">Alice’s Adventures in Wonderland</Text>
 ```
-* Style
+
+#### `[CSS]` Style
   ```css
 span.display {
 	font-size: 3.8rem;
@@ -18,4 +18,5 @@ span.display {
 	font-weight: 600;
 }
 ```
+
 * Example with visible margins

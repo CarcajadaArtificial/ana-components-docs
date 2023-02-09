@@ -4,11 +4,12 @@ The *small* type is useful for text that must not take up as much screen space a
 
 There are times when there's an obligation for it to be visible as text, like the Terms and Conditions or Privacy Policy links. Even though, the *small* text type must rarely be used and must **avoid using extensive text and limit its content to a few words only.**
 
-* Component
+#### `[JSX]` Component
   ```html
 <Text type="small">THE MILLENNIUM FULCRUM EDITION 3.0</Text>
 ```
-* Style
+
+#### `[CSS]` Style
   ```css
 span.small {
 	font-size: 1.8rem;
@@ -16,4 +17,5 @@ span.small {
 	font-weight: 400;
 }
 ```
+
 * Example with visible margins

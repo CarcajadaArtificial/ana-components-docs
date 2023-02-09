@@ -1,12 +1,14 @@
 #### title
 
-A *title* is a text type that is used in the largest true heading. A [display](#display) type must **not** be used as a "larger title". A *title* type would function as a page title perfectly well. Ideally, there would be a need for only one _title_; anything else should be able to fit on the [heading](#heading) and [subheading](#subheading) text types.
+A *title* is a text type that is used in the largest true heading and functions as a page title. It serves as a succinct description of the content and provides context to the user. It is an opportunity to create structure within the design and be representative of the content's identity and purpose. 
+* There must only be one _title_ per page; anything else must be able to fit on the [heading](#heading) and [subheading](#subheading) text types.
+* A [display](#display) type must **not** be used as a "larger title".
 
-* Component
+#### `[JSX]` Component
   ```html
 <Text type="title">Alice’s Adventures in Wonderland</Text>
 ```
-* Style
+#### `[CSS]` Style
   ```css
 span.title {
 	font-size: 2.8rem;
@@ -14,4 +16,5 @@ span.title {
 	font-weight: 600;
 }
 ```
+
 * Example with visible margins
