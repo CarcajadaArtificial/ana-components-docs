@@ -1,12 +1,29 @@
 # Changelog
 
-## v0.0.26
+## v0.0.27
 
-### Added color page documentation
-  - `~/docs/particles/color/*.md`
+### Added ana dependencies to the import map
+  - `import_map.json`
+
+### Updated all imports of ana-components
+  - `components/ColorBlock.tsx`
+  - `components/Page.tsx`
+  - `components/TextDoc.tsx`
+  - `islands/ColorDisplay.tsx`
+  - `islands/Navigation.tsx`
+  - `islands/ThemeExample.tsx`
+  - `routes/index.tsx`
+  - `routes/atoms/button.tsx`
+  - `routes/atoms/input.tsx`
+  - `routes/atoms/text.tsx`
+  - `routes/atoms/theme.tsx`
+  - `routes/particles/color.tsx`
+  - `src/links.ts`
 
 ### Added minor updates
-  - `~/islands/ColorDisplay.tsx`
+  - `.gitignore`
+  - `docs/atoms/input/button.md`
+  - `docs/particles/color/turquesa.md`
 
 ### Comming soon (v0.1.0)
 

@@ -2,13 +2,12 @@ import {
   Footer,
   Header,
   Layout,
-  LAYOUT_TYPES,
   Link,
   Linkmap,
   Main,
   Text,
-  TEXT_TYPES,
-} from "../../deps.ts";
+} from "ana-components";
+import { LAYOUT_TYPES, TEXT_TYPES } from "ana-components";
 import Page from "../../components/Page.tsx";
 import TextDoc from "../../components/TextDoc.tsx";
 import Navigation from "../../islands/Navigation.tsx";

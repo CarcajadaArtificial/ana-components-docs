@@ -3,7 +3,7 @@
 //  | |__| | ' \| / /(_-<
 //  |____|_|_||_|_\_\/__/
 //
-import { ItemLink } from '../deps.ts';
+import { ItemLink } from 'ana-components';
 
 export const LINKS_PARTICLES: ItemLink[] = [
   {

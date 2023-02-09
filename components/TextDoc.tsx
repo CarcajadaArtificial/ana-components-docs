@@ -1,5 +1,5 @@
-import { TEXT_TYPES } from "../deps.ts";
-import { Text } from "../deps.ts";
+import { TEXT_TYPES } from "ana-components";
+import { Text } from "ana-components";
 
 interface iTextDoc {
   type: TEXT_TYPES;

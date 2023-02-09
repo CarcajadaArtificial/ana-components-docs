@@ -1,17 +1,16 @@
 import {
   Button,
-  BUTTON_TYPES,
   Card,
   Footer,
   Header,
   Input,
   Layout,
-  LAYOUT_TYPES,
   Link,
   Linkmap,
   Main,
   Text,
-} from "../../deps.ts";
+} from "ana-components";
+import { BUTTON_TYPES, LAYOUT_TYPES } from "ana-components";
 import Page from "../../components/Page.tsx";
 import Navigation from "../../islands/Navigation.tsx";
 import { getDoc } from "../../src/doc.ts";

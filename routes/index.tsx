@@ -2,13 +2,12 @@ import {
   Footer,
   Header,
   Layout,
-  LAYOUT_TYPES,
   Link,
   Linkmap,
   Main,
   Text,
-  TEXT_TYPES,
-} from "../deps.ts";
+} from "ana-components";
+import { LAYOUT_TYPES, TEXT_TYPES } from "ana-components";
 import Page from "../components/Page.tsx";
 import { LINKS_ATOMS, LINKS_MOLECULES, LINKS_PARTICLES } from "../src/links.ts";
 

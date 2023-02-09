@@ -1,5 +1,5 @@
 import { useState } from "preact/hooks";
-import { Link, Menu, Navigation, Text } from "../deps.ts";
+import { Link, Menu, Navigation, Text } from "ana-components";
 
 interface iNavigation {
   title: string;

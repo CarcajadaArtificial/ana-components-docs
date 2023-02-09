@@ -5,4 +5,6 @@ This type of input is very useful for sending form data and must be used instead
 ```html
 <Input type="button" />
 <Input type="image" />
+<Input type="submit" />
+<Input type="reset" />
 ````

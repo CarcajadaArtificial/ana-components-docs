@@ -1,4 +1,4 @@
-import { Footer, Header, Link, Main, Text, TEXT_TYPES } from "../../deps.ts";
+import { Footer, Header, Link, Main, Text } from "ana-components";
 import Page from "../../components/Page.tsx";
 import Navigation from "../../islands/Navigation.tsx";
 import ColorDisplay from "../../islands/ColorDisplay.tsx";

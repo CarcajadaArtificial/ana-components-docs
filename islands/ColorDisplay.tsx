@@ -1,14 +1,8 @@
 import ColorBlock from "../components/ColorBlock.tsx";
 import ColorPair from "../components/ColorPair.tsx";
 import { orderedPalette, palette, paletteDisplay } from "../src/const.ts";
-import {
-  Input,
-  Layout,
-  LAYOUT_TYPES,
-  Separator,
-  Text,
-  TEXT_TYPES,
-} from "../deps.ts";
+import { Card, Input, Layout, Separator, Text } from "ana-components";
+import { LAYOUT_TYPES, TEXT_TYPES } from "ana-components";
 import type { Colors } from "../src/types.ts";
 import { useState } from "preact/hooks";
 
@@ -19,9 +13,11 @@ export default function (doc: { [key in Colors]: string }) {
   return (
     <div>
       <Layout type={selectedColor ? LAYOUT_TYPES.LEFT : LAYOUT_TYPES.FOCUS}>
+        <Text noMargins type={TEXT_TYPES.HEADING}>Color palette selector</Text>
+        {selectedColor ? <div /> : null}
         {selectedColor
           ? (
-            <div>
+            <Card>
               <div
                 class="markdown-prose"
                 dangerouslySetInnerHTML={{
@@ -100,11 +96,10 @@ export default function (doc: { [key in Colors]: string }) {
                   <ColorPair mainColor={selectedColor} pairedColor={neighbor} />
                 </div>
               ))}
-            </div>
+            </Card>
           )
           : null}
         <div class="bg-obsidiana p-8 rounded clr-border border-1">
-          <Text type={TEXT_TYPES.HEADING}>Color palette selector</Text>
           <Input
             type="checkbox"
             label="Order by hue and brightness"

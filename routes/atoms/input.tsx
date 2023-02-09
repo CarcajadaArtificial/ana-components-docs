@@ -3,12 +3,12 @@ import {
   Header,
   Input,
   Layout,
-  LAYOUT_TYPES,
   Link,
   Linkmap,
   Main,
   Text,
-} from "../../deps.ts";
+} from "ana-components";
+import { LAYOUT_TYPES } from "ana-components";
 import Page from "../../components/Page.tsx";
 import Navigation from "../../islands/Navigation.tsx";
 import { getDoc } from "../../src/doc.ts";

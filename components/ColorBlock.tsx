@@ -4,6 +4,8 @@ import type { Colors } from "../src/types.ts";
 interface iColorBlock
   extends JSX.HTMLAttributes<HTMLDivElement>, Partial<ARIAMixin> {
   color: Colors | null;
+  // This property unifies HTMLAttributes's and ARIAMixin's role property.
+  role?: string;
 }
 
 export default function (props: iColorBlock) {

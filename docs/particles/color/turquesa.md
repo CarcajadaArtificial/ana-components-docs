@@ -1,2 +1,2 @@
 ### turquesa
-`/tuɾkˈesa/`
+`/tuɾkˈesa/` Turquoise is the color that it is due to its unique composition, which combines the vivid blue of the sky with the tranquil green of the earth. This harmonious blend of colors creates a hue that embodies the essence of balance and stability, and speaks to the interconnectedness of all things. It is a color that has been revered and cherished throughout history, and continues to evoke feelings of wonder and awe in those who behold it.

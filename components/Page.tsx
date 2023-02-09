@@ -1,5 +1,6 @@
 import { ComponentChildren } from "preact";
-import { Page, PAGE_THEME } from "../deps.ts";
+import { Page } from "ana-components";
+import { PAGE_THEME } from "ana-components";
 
 interface iPage {
   children?: ComponentChildren;

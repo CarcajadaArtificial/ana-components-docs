@@ -5,14 +5,13 @@ import {
   Header,
   Input,
   Layout,
-  LAYOUT_TYPES,
   Link,
   Main,
   Navigation,
   Select,
   Text,
-  TEXT_TYPES,
-} from "../deps.ts";
+} from "ana-components";
+import { LAYOUT_TYPES, TEXT_TYPES } from "ana-components";
 import { allThemes, Theme } from "../src/types.ts";
 
 export default function () {

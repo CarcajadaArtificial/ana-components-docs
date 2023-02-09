@@ -1,14 +1,5 @@
-import {
-  Card,
-  Footer,
-  Header,
-  Layout,
-  LAYOUT_TYPES,
-  Link,
-  Main,
-  Text,
-  TEXT_TYPES,
-} from "../../deps.ts";
+import { Card, Footer, Header, Layout, Link, Main, Text } from "ana-components";
+import { LAYOUT_TYPES, TEXT_TYPES } from "ana-components";
 import Navigation from "../../islands/Navigation.tsx";
 import ThemeExample from "../../islands/ThemeExample.tsx";
 import Page from "../../components/Page.tsx";
