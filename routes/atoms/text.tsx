@@ -26,6 +26,7 @@ const doc = {
   noMargins: render(await getDoc("atoms/text", "noMargins")),
   inheritColor: render(await getDoc("atoms/text", "inheritColor")),
   compact: render(await getDoc("atoms/text", "compact")),
+  single: render(await getDoc("atoms/text", "single")),
   aliceFirst: await getDoc("testTexts", "aliceFirst"),
 };
 
@@ -149,6 +150,10 @@ export default function () {
                 </Text>
               </div>
             </div>
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.single }}
+            />
           </div>
         </Layout>
       </Main>

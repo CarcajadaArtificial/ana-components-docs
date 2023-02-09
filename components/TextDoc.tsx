@@ -11,7 +11,7 @@ interface iTextDoc {
 export default function (props: iTextDoc) {
   return (
     <div
-      class={`relative -top-4 grid`}
+      class={`relative -top-2 grid`}
     >
       <div
         class="clr-bg-panel pl-2 flex items-end rounded-t"

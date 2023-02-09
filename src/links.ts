@@ -178,15 +178,15 @@ export const LINKS_COMPONENT_TEXT = [
         name: 'compact',
         url: '#compact',
       },
+      {
+        name: 'single',
+        url: '#single',
+      },
     ],
   },
 ];
 
 export const LINKS_COMPONENT_INPUT = [
-  {
-    name: 'Default',
-    url: '#default',
-  },
   {
     name: 'Component props',
     url: '#component-props',

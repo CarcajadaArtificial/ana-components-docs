@@ -1,29 +1,17 @@
 # Changelog
 
-## v0.0.27
+## v0.0.28
 
-### Added ana dependencies to the import map
-  - `import_map.json`
-
-### Updated all imports of ana-components
-  - `components/ColorBlock.tsx`
-  - `components/Page.tsx`
-  - `components/TextDoc.tsx`
-  - `islands/ColorDisplay.tsx`
-  - `islands/Navigation.tsx`
-  - `islands/ThemeExample.tsx`
-  - `routes/index.tsx`
-  - `routes/atoms/button.tsx`
-  - `routes/atoms/input.tsx`
+### Added the `single` property to the Text component documentation page
   - `routes/atoms/text.tsx`
-  - `routes/atoms/theme.tsx`
-  - `routes/particles/color.tsx`
+  - `docs/atoms/text/single.md`
   - `src/links.ts`
 
 ### Added minor updates
-  - `.gitignore`
-  - `docs/atoms/input/button.md`
-  - `docs/particles/color/turquesa.md`
+  - `import_map.json`
+  - `routes/_app.tsx`
+  - `src/links.ts`
+  - `components/TextDoc.tsx`
 
 ### Comming soon (v0.1.0)
 
