@@ -1,10 +1,9 @@
 # Changelog
 
-## v0.0.30
+## v0.0.31
 
 ### Minor updates
-  - `routes/atoms/button.tsx`
-  - `src/links.ts`
+  - `CHANGELOG.md`
 
 ## Comming soon (v0.1.0)
 
@@ -36,30 +35,30 @@
   - [ ] chicle 🎨💾
   - [ ] ladrillo 🎨💾
   - [ ] arandano 🎨💾
-  - [x] jade 🎨💾📝
+  - [x] jade
   - [ ] menta 🎨💾
   - [ ] acero 🎨💾
   - [ ] arena 🎨💾
   - [ ] mantequilla 🎨💾
   - [ ] chapopote 🎨💾
-  - [x] uva 🎨💾📝
+  - [x] uva
   - [ ] musgo 🎨💾
-  - [x] cobalto 🎨💾📝
+  - [x] cobalto
   - [ ] hielo 🎨💾
   - [ ] mota 🎨💾
   - [ ] vino 🎨💾
   - [ ] blanco 🎨💾
   - [ ] ambar 🎨💾
-  - [x] lapis 🎨💾📝
-  - [x] marino 🎨💾📝
+  - [x] lapis
+  - [x] marino
   - [ ] fresa 🎨💾
   - [ ] cedro 🎨💾
   - [ ] bombon 🎨💾
   - [ ] pulpo 🎨💾
   - [ ] tortilla 🎨💾
   - [ ] manzana 🎨💾
-  - [x] turquesa 🎨💾📝
-  - [x] vinca 🎨💾📝
+  - [x] turquesa
+  - [x] vinca
   - [ ] borrador 🎨💾
   - [ ] pitahaya 🎨💾
   - [ ] obsidiana 🎨💾
@@ -68,14 +67,14 @@
   - [ ] pastel 🎨💾
   - [ ] papel 🎨💾
   - [ ] hierro 🎨💾
-  - [x] magia 🎨💾📝
-  - [x] cielo 🎨💾📝
+  - [x] magia
+  - [x] cielo
   - [ ] plata 🎨💾
-  - [x] lavanda 🎨💾📝
+  - [x] lavanda
   - [ ] cajeta 🎨💾
   - [ ] alien 🎨💾
-  - [x] princesa 🎨💾📝
-  - [x] nube 🎨💾📝
+  - [x] princesa
+  - [x] nube
 
 - [ ] Typography 
 
@@ -92,17 +91,17 @@
     - [ ] `type` disabled 💾
     - [ ] `type` error 💾
   - [ ] `maxWidth` component property
-  - [x] input buttons 🎨💾📝
-- [x] input 🎨💾📝
-  - [x] `label` component property 🎨💾📝
-  - [x] `error` component property 🎨💾📝
-  - [x] `maxWidth` component property 🎨💾📝
-  - [x] `placeholder` element attribute 🎨💾📝
-  - [x] `type` element attribute 🎨💾📝
-  - [x] `required` element attribute 🎨💾📝
-  - [x] `disabled` element attribute 🎨💾📝
-  - [x] checkbox and radio 🎨💾📝
-  - [x] button 🎨💾📝
+  - [x] input buttons
+- [x] input
+  - [x] `label` component property
+  - [x] `error` component property
+  - [x] `maxWidth` component property
+  - [x] `placeholder` element attribute
+  - [x] `type` element attribute
+  - [x] `required` element attribute
+  - [x] `disabled` element attribute
+  - [x] checkbox and radio
+  - [x] button
 - [ ] select 💾
   - [ ] `options` component property 💾
   - [ ] `label` component property 💾
@@ -121,18 +120,18 @@
 - [ ] code
 - [ ] link 💾
   - [ ] `nostyle` component property 💾
-- [x] text 🎨💾📝
-  - [x] `type` component property 🎨💾📝
-    - [x] `type` display 🎨💾📝
-    - [x] `type` title 🎨💾📝
-    - [x] `type` heading 🎨💾📝
-    - [x] `type` subheading 🎨💾📝
-    - [x] `type` paragraph 🎨💾📝
-    - [x] `type` small 🎨💾📝
-  - [x] `noMargins` component property 🎨💾📝
-  - [x] `inheritColor` component property 🎨💾📝
-  - [x] `compact` component property 🎨💾📝
-  - [x] `single` component property 🎨💾📝
+- [x] text
+  - [x] `type` component property
+    - [x] `type` display
+    - [x] `type` title
+    - [x] `type` heading
+    - [x] `type` subheading
+    - [x] `type` paragraph
+    - [x] `type` small
+  - [x] `noMargins` component property
+  - [x] `inheritColor` component property
+  - [x] `compact` component property
+  - [x] `single` component property
 - [ ] layout 💾
   - [ ] `type` component property 💾
   - [ ] `margin` component property 💾
