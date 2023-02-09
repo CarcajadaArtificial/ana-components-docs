@@ -101,12 +101,12 @@ export default function () {
                     <Input type="button" value="input button" />
                     <Input
                       type="button"
-                      value="dsiabled button"
+                      value="disabled button"
                       disabled
                     />
                     <Input
                       type="button"
-                      value="button with error"
+                      value="error button"
                       error="Error message."
                     />
                   </div>
@@ -120,12 +120,12 @@ export default function () {
                   <Input type="button" value="input button" />
                   <Input
                     type="button"
-                    value="dsiabled button"
+                    value="disabled button"
                     disabled
                   />
                   <Input
                     type="button"
-                    value="button with error"
+                    value="error button"
                     error="Error message."
                   />
                 </div>

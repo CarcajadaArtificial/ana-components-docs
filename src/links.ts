@@ -249,7 +249,7 @@ export const LINKS_COMPONENT_BUTTON: ItemLink[] = [
     url: '#color',
   },
   {
-    name: 'Button inputs',
-    url: '#button-inputs',
+    name: 'Input buttons',
+    url: '#input-buttons',
   },
 ];
