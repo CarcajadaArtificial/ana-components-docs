@@ -1,5 +1,5 @@
 export type Colors =
-  | 'detergente'
+  | 'azulejo'
   | 'grafito'
   | 'flan'
   | 'chicle'
@@ -32,7 +32,7 @@ export type Colors =
   | 'borrador'
   | 'pitahaya'
   | 'obsidiana'
-  | 'kawaii'
+  | 'ajolote'
   | 'limon'
   | 'pastel'
   | 'papel'

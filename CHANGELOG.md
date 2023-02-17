@@ -1,9 +1,20 @@
 # Changelog
 
-## v0.0.31
+## v0.0.32
 
-### Minor updates
-  - `CHANGELOG.md`
+### Changed color name from `detergente` to `azulejo` and `kawaii` to `ajolote``
+  - `docs/particles/color/ajolote.md`
+  - `docs/particles/color/azulejo.md`
+  - `routes/particles/color.tsx`
+  - `src/const.ts`
+  - `src/types.ts`
+
+### Minor architecture updates
+  - `islands/ColorDisplay.tsx`
+
+### Updated imports
+  - `import_map.json`
+  - `routes/_app.tsx`
 
 ## Comming soon (v0.1.0)
 
@@ -29,7 +40,7 @@
 
 #### Particles
 - [ ] Color 🎨💾
-  - [x] detergente
+  - [x] azulejo
   - [ ] grafito 🎨💾
   - [ ] flan 🎨💾
   - [ ] chicle 🎨💾
@@ -62,7 +73,7 @@
   - [ ] borrador 🎨💾
   - [ ] pitahaya 🎨💾
   - [ ] obsidiana 🎨💾
-  - [ ] kawaii 🎨💾
+  - [ ] ajolote 🎨💾
   - [ ] limon 🎨💾
   - [ ] pastel 🎨💾
   - [ ] papel 🎨💾

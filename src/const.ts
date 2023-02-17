@@ -16,7 +16,7 @@ interface ColorData {
 }
 
 export const palette: Palette = {
-  detergente: {
+  azulejo: {
     hex: '#1f84cc',
     r: 31,
     g: 132,
@@ -164,7 +164,7 @@ export const palette: Palette = {
     h: 210,
     s: 82,
     l: 39,
-    neighbors: ['detergente', 'lapis'],
+    neighbors: ['azulejo', 'lapis'],
   },
   hielo: {
     hex: '#7ae0f5',
@@ -346,7 +346,7 @@ export const palette: Palette = {
     l: 5,
     neighbors: ['chapopote'],
   },
-  kawaii: {
+  ajolote: {
     hex: '#e9abf5',
     r: 233,
     g: 171,
@@ -374,7 +374,7 @@ export const palette: Palette = {
     h: 330,
     s: 91,
     l: 78,
-    neighbors: ['kawaii', 'bombon', 'borrador'],
+    neighbors: ['ajolote', 'bombon', 'borrador'],
   },
   papel: {
     hex: '#eee6f2',
@@ -414,7 +414,7 @@ export const palette: Palette = {
     h: 215,
     s: 86,
     l: 72,
-    neighbors: ['vinca', 'detergente'],
+    neighbors: ['vinca', 'azulejo'],
   },
   plata: {
     hex: '#d5ced9',
@@ -474,7 +474,7 @@ export const palette: Palette = {
     h: 249,
     s: 100,
     l: 93,
-    neighbors: ['princesa', 'kawaii', 'vinca'],
+    neighbors: ['princesa', 'ajolote', 'vinca'],
   },
 };
 
@@ -486,11 +486,11 @@ export const orderedPalette: (Colors | null)[][] = [
   // prettier-ignore
   ['pitahaya','manzana','ladrillo','cajeta',null,'cedro','turquesa','cobalto','uva','grafito'],
   // prettier-ignore
-  ['borrador','fresa',null,null,null,'limon',null,'detergente','lavanda','hierro'],
+  ['borrador','fresa',null,null,null,'limon',null,'azulejo','lavanda','hierro'],
   // prettier-ignore
   [null,'chicle','ambar',null,null,'mota','menta',null,'magia','acero'],
   // prettier-ignore
-  ['kawaii','bombon','flan','tortilla',null,'musgo','hielo','cielo','princesa','plata'],
+  ['ajolote','bombon','flan','tortilla',null,'musgo','hielo','cielo','princesa','plata'],
   // prettier-ignore
   [null,'pastel',null,'arena','mantequilla','alien',null,'vinca','nube','papel'],
   // prettier-ignore
@@ -499,9 +499,9 @@ export const orderedPalette: (Colors | null)[][] = [
 
 export const paletteDisplay: (Colors | null)[][] = [
   // prettier-ignore
-  ['cielo','vinca','nube','kawaii','pastel','borrador','pitahaya',null,'obsidiana',null],
+  ['cielo','vinca','nube','ajolote','pastel','borrador','pitahaya',null,'obsidiana',null],
   // prettier-ignore
-  ['detergente',null,'princesa',null,'bombon',null,'pulpo',null,'chapopote',null],
+  ['azulejo',null,'princesa',null,'bombon',null,'pulpo',null,'chapopote',null],
   // prettier-ignore
   ['cobalto',null,'magia',null,'chicle',null,'vino',null,'grafito',null],
   // prettier-ignore

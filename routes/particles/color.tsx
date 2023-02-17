@@ -11,8 +11,8 @@ const doc = {
 };
 
 const colorDoc: { [key in Colors]: string } = {
-  detergente: render(await getDoc("particles/color", "detergente")),
-  grafito: render(await getDoc("particles/color", "detergente")),
+  azulejo: render(await getDoc("particles/color", "azulejo")),
+  grafito: render(await getDoc("particles/color", "azulejo")),
   flan: render(await getDoc("particles/color", "flan")),
   chicle: render(await getDoc("particles/color", "chicle")),
   ladrillo: render(await getDoc("particles/color", "ladrillo")),
@@ -44,7 +44,7 @@ const colorDoc: { [key in Colors]: string } = {
   borrador: render(await getDoc("particles/color", "borrador")),
   pitahaya: render(await getDoc("particles/color", "pitahaya")),
   obsidiana: render(await getDoc("particles/color", "obsidiana")),
-  kawaii: render(await getDoc("particles/color", "kawaii")),
+  ajolote: render(await getDoc("particles/color", "ajolote")),
   limon: render(await getDoc("particles/color", "limon")),
   pastel: render(await getDoc("particles/color", "pastel")),
   papel: render(await getDoc("particles/color", "papel")),

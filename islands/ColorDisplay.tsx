@@ -13,18 +13,18 @@ export default function (doc: { [key in Colors]: string }) {
   return (
     <div>
       <Layout type={selectedColor ? LAYOUT_TYPES.LEFT : LAYOUT_TYPES.FOCUS}>
-        <Text noMargins type={TEXT_TYPES.HEADING}>Color palette selector</Text>
-        {selectedColor ? <div /> : null}
+        {selectedColor
+          ? null
+          : <Text noMargins type={TEXT_TYPES.HEADING}>Color selector</Text>}
         {selectedColor
           ? (
-            <Card>
+            <div>
               <div
-                class="markdown-prose"
+                class="markdown-prose mb-8"
                 dangerouslySetInnerHTML={{
                   __html: doc[selectedColor],
                 }}
               />
-              <Separator />
               <Text noMargins>
                 <strong>Hex:&nbsp;</strong>
                 <span>{palette[selectedColor].hex}</span>
@@ -45,7 +45,9 @@ export default function (doc: { [key in Colors]: string }) {
                   }, ${palette[selectedColor].l})`}
                 </span>
               </Text>
-              <Separator />
+              <Text type={TEXT_TYPES.SUBHEADING}>
+                Contrast
+              </Text>
               <div className="flex gap-2">
                 <div class="w-full">
                   <Text noMargins>
@@ -96,7 +98,7 @@ export default function (doc: { [key in Colors]: string }) {
                   <ColorPair mainColor={selectedColor} pairedColor={neighbor} />
                 </div>
               ))}
-            </Card>
+            </div>
           )
           : null}
         <div class="bg-obsidiana p-8 rounded clr-border border-1">
