@@ -1,20 +1,11 @@
 # Changelog
 
-## v0.0.32
+## v0.0.33
 
-### Changed color name from `detergente` to `azulejo` and `kawaii` to `ajolote``
-  - `docs/particles/color/ajolote.md`
-  - `docs/particles/color/azulejo.md`
-  - `routes/particles/color.tsx`
-  - `src/const.ts`
-  - `src/types.ts`
-
-### Minor architecture updates
+### Updated the ColorDisplay island
   - `islands/ColorDisplay.tsx`
-
-### Updated imports
-  - `import_map.json`
-  - `routes/_app.tsx`
+  - `components/ColorBlock.tsx`
+  - `components/ObsidianaCard.tsx`
 
 ## Comming soon (v0.1.0)
 

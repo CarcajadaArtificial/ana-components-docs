@@ -6,14 +6,15 @@ interface iColorBlock
   color: Colors | null;
   // This property unifies HTMLAttributes's and ARIAMixin's role property.
   role?: string;
+  focusable?: boolean;
 }
 
 export default function (props: iColorBlock) {
-  const { color, ...p } = props;
+  const { color, focusable, ...p } = props;
   return (
     <div
       class="color-block m-0.5"
-      tabIndex={color === null ? -1 : 0}
+      tabIndex={focusable ? 0 : undefined}
       {...p}
     >
       <div
