@@ -1,2 +1,2 @@
 ### borrador
-`/bˌoɾɾaðˈoɾ/`
+`/bˌoɾɾaðˈoɾ/` Comming soon

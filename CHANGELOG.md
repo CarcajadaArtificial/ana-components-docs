@@ -1,17 +1,9 @@
 # Changelog
 
-## v0.0.34
+## v0.0.35
 
-### Added color patterns
-  - `routes/particles/color.tsx`
-  - `docs/particles/animal.md`
-  - `docs/particles/concepts.md`
-  - `docs/particles/food.md`
-  - `docs/particles/fruit.md`
-  - `docs/particles/landscape.md`
-  - `docs/particles/mineral.md`
-  - `docs/particles/plant.md`
-  - `docs/particles/things.md`
+### Added "Comming Soon" to missing documentation
+  - `docs/particles/*.md`
 
 ## Comming soon (v0.1.0)
 

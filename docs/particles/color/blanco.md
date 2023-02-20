@@ -1,2 +1,2 @@
 ### blanco
-`/blˈanko/`
+`/blˈanko/` Comming soon

@@ -1,2 +1,2 @@
 ### arandano
-`/aɾˈandano/` *(Arándano)*
+`/aɾˈandano/` *(Arándano)* Comming soon

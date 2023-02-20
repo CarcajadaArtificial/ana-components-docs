@@ -1,2 +1,2 @@
 ### ajolote
-`/kawˈa͡ɪi/`
+`/ˌaxolˈote/` Comming soon
