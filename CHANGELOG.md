@@ -1,11 +1,17 @@
 # Changelog
 
-## v0.0.33
+## v0.0.34
 
-### Updated the ColorDisplay island
-  - `islands/ColorDisplay.tsx`
-  - `components/ColorBlock.tsx`
-  - `components/ObsidianaCard.tsx`
+### Added color patterns
+  - `routes/particles/color.tsx`
+  - `docs/particles/animal.md`
+  - `docs/particles/concepts.md`
+  - `docs/particles/food.md`
+  - `docs/particles/fruit.md`
+  - `docs/particles/landscape.md`
+  - `docs/particles/mineral.md`
+  - `docs/particles/plant.md`
+  - `docs/particles/things.md`
 
 ## Comming soon (v0.1.0)
 
