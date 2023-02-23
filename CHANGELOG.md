@@ -1,9 +1,18 @@
 # Changelog
 
-## v0.0.35
+## v0.0.36
 
-### Added "Comming Soon" to missing documentation
-  - `docs/particles/*.md`
+### Added the `ColorList` coponent
+  - `components/ColorList.tsx`
+
+### Added "patterns" to the color documentation page
+  - `routes/particles/color.tsx`
+  - `src/links.ts`
+
+### Minor updates
+  - `components/ColorBlock.tsx`
+  - `components/ObsidianaCard.tsx`
+  - `routes/_app.tsx`
 
 ## Comming soon (v0.1.0)
 

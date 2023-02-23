@@ -131,6 +131,47 @@ export const LINKS_MOLECULES: ItemLink[] = [
   },
 ];
 
+export const LINKS_PARTICLE_COLOR = [
+  {
+    name: 'Color Selector',
+    url: '#color-selector',
+  },
+  {
+    name: 'Patterns',
+    url: '#patterns',
+    children: [
+      {
+        name: 'Mineral-Based',
+        url: '#mineral-based',
+      },
+      {
+        name: 'Fruit-Based',
+        url: '#fruit-based',
+      },
+      {
+        name: 'Plant-Based',
+        url: '#plant-based',
+      },
+      {
+        name: 'Based on human-made food',
+        url: '#based-on-human-made-food',
+      },
+      {
+        name: 'Based on human-made things',
+        url: '#based-on-human-made-things',
+      },
+      {
+        name: 'Based on human-made concepts',
+        url: '#based-on-human-made-concepts',
+      },
+      {
+        name: 'Based on landscape scenery elements',
+        url: '#based-on-landscape-scenery-elements',
+      },
+    ],
+  },
+];
+
 export const LINKS_COMPONENT_TEXT = [
   {
     name: 'type',

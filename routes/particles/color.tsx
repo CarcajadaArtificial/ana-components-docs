@@ -4,17 +4,18 @@ import {
   Layout,
   LAYOUT_TYPES,
   Link,
+  Linkmap,
   Main,
   Text,
 } from "ana-components";
 import Page from "../../components/Page.tsx";
-import ObsidianaCard from "../../components/ObsidianaCard.tsx";
-import ColorBlock from "../../components/ColorBlock.tsx";
+import ColorList from "../../components/ColorList.tsx";
 import Navigation from "../../islands/Navigation.tsx";
 import ColorDisplay from "../../islands/ColorDisplay.tsx";
 import { getDoc } from "../../src/doc.ts";
 import { render } from "gfm";
 import { Colors } from "../../src/types.ts";
+import { LINKS_PARTICLE_COLOR } from "../../src/links.ts";
 
 const doc = {
   description: render(await getDoc("particles/color", "description")),
@@ -86,121 +87,95 @@ export default function () {
           class="markdown-prose"
           dangerouslySetInnerHTML={{ __html: doc.description }}
         />
+        <Linkmap
+          links={[
+            { name: "Table of contents", children: LINKS_PARTICLE_COLOR },
+          ]}
+        />
       </Header>
       <Main>
         <ColorDisplay {...colorDoc} />
         <Layout type={LAYOUT_TYPES.LEFT}>
           <div>
-            <div
-              class="markdown-prose"
-              dangerouslySetInnerHTML={{ __html: doc.mineral }}
+            <ColorList
+              doc={doc.mineral}
+              colors={[
+                "jade",
+                "turquesa",
+                "cobalto",
+                "lapis",
+                "obsidiana",
+                "grafito",
+                "hierro",
+                "acero",
+                "plata",
+              ]}
             />
-            <ObsidianaCard>
-              <div class="grid grid-cols-6">
-                <ColorBlock color="jade" />
-                <ColorBlock color="turquesa" />
-                <ColorBlock color="cobalto" />
-                <ColorBlock color="lapis" />
-                <ColorBlock color="ambar" />
-                <ColorBlock color="obsidiana" />
-                <ColorBlock color="grafito" />
-                <ColorBlock color="hierro" />
-                <ColorBlock color="acero" />
-                <ColorBlock color="plata" />
-              </div>
-            </ObsidianaCard>
-            <div
-              class="markdown-prose mt-8"
-              dangerouslySetInnerHTML={{ __html: doc.fruit }}
+            <ColorList
+              doc={doc.fruit}
+              colors={[
+                "limon",
+                "uva",
+                "pitahaya",
+                "fresa",
+                "manzana",
+                "arandano",
+              ]}
             />
-            <ObsidianaCard>
-              <div class="grid grid-cols-6">
-                <ColorBlock color="limon" />
-                <ColorBlock color="uva" />
-                <ColorBlock color="pitahaya" />
-                <ColorBlock color="fresa" />
-                <ColorBlock color="manzana" />
-                <ColorBlock color="arandano" />
-              </div>
-            </ObsidianaCard>
-            <div
-              class="markdown-prose mt-8"
-              dangerouslySetInnerHTML={{ __html: doc.plant }}
+            <ColorList
+              doc={doc.plant}
+              colors={[
+                "vinca",
+                "lavanda",
+                "cedro",
+                "mota",
+                "musgo",
+                "ambar",
+              ]}
             />
-            <ObsidianaCard>
-              <div class="grid grid-cols-6">
-                <ColorBlock color="vinca" />
-                <ColorBlock color="lavanda" />
-                <ColorBlock color="cedro" />
-                <ColorBlock color="mota" />
-                <ColorBlock color="musgo" />
-              </div>
-            </ObsidianaCard>
-            <div
-              class="markdown-prose mt-8"
-              dangerouslySetInnerHTML={{ __html: doc.animal }}
+            <ColorList
+              doc={doc.food}
+              colors={[
+                "mantequilla",
+                "tortilla",
+                "flan",
+                "cajeta",
+                "chicle",
+                "bombon",
+                "pastel",
+                "vino",
+                "menta",
+              ]}
             />
-            <ObsidianaCard>
-              <div class="grid grid-cols-6">
-                <ColorBlock color="ajolote" />
-                <ColorBlock color="pulpo" />
-              </div>
-            </ObsidianaCard>
-            <div
-              class="markdown-prose mt-8"
-              dangerouslySetInnerHTML={{ __html: doc.food }}
+            <ColorList
+              doc={doc.things}
+              colors={[
+                "papel",
+                "borrador",
+                "ladrillo",
+                "chapopote",
+                "azulejo",
+              ]}
             />
-            <ObsidianaCard>
-              <div class="grid grid-cols-6">
-                <ColorBlock color="mantequilla" />
-                <ColorBlock color="tortilla" />
-                <ColorBlock color="flan" />
-                <ColorBlock color="cajeta" />
-                <ColorBlock color="chicle" />
-                <ColorBlock color="bombon" />
-                <ColorBlock color="pastel" />
-                <ColorBlock color="vino" />
-                <ColorBlock color="menta" />
-              </div>
-            </ObsidianaCard>
-            <div
-              class="markdown-prose mt-8"
-              dangerouslySetInnerHTML={{ __html: doc.things }}
+            <ColorList
+              doc={doc.concepts}
+              colors={[
+                "alien",
+                "blanco",
+                "princesa",
+                "magia",
+              ]}
             />
-            <ObsidianaCard>
-              <div class="grid grid-cols-6">
-                <ColorBlock color="papel" />
-                <ColorBlock color="borrador" />
-                <ColorBlock color="ladrillo" />
-                <ColorBlock color="chapopote" />
-                <ColorBlock color="azulejo" />
-              </div>
-            </ObsidianaCard>
-            <div
-              class="markdown-prose mt-8"
-              dangerouslySetInnerHTML={{ __html: doc.concepts }}
+            <ColorList
+              doc={doc.landscape}
+              colors={[
+                "hielo",
+                "marino",
+                "cielo",
+                "nube",
+                "arena",
+              ]}
             />
-            <ObsidianaCard>
-              <div class="grid grid-cols-6">
-                <ColorBlock color="alien" />
-                <ColorBlock color="blanco" />
-                <ColorBlock color="princesa" />
-                <ColorBlock color="magia" />
-              </div>
-            </ObsidianaCard>
-            <div
-              class="markdown-prose mt-8"
-              dangerouslySetInnerHTML={{ __html: doc.landscape }}
-            />
-            <ObsidianaCard>
-              <div class="grid grid-cols-6">
-                <ColorBlock color="hielo" />
-                <ColorBlock color="marino" />
-                <ColorBlock color="cielo" />
-                <ColorBlock color="nube" />
-                <ColorBlock color="arena" />
-              </div>
-            </ObsidianaCard>
           </div>
         </Layout>
       </Main>
