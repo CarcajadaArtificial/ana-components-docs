@@ -1,2 +1,2 @@
 ### cedro
-`/θˈeðɾo/` Comming soon
+`/θˈeðɾo/` coming soon

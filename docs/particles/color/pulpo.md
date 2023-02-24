@@ -1,2 +1,2 @@
 ### pulpo
-`/pˈulpo/` Comming soon
+`/pˈulpo/` coming soon

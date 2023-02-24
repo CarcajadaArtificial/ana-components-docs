@@ -1,2 +1,2 @@
 ### hierro
-`/jˈeɾɾo/` Comming soon
+`/jˈeɾɾo/` coming soon

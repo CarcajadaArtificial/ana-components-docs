@@ -1,25 +1,10 @@
 # Changelog
 
-## v0.0.38
+## v0.0.39
 
-### Added the `ButtonPair` component
-  - `components/ButtonPair.tsx`
+### Fixing typo
 
-### Updated the button documentation page
-  - `routes/atoms/button.tsx`
-
-### Added new button docs
-  - `docs/atoms/button/description.md`
-  - `docs/atoms/button/disabled.md`
-  - `docs/atoms/button/error.md`
-  - `docs/atoms/button/invisible.md`
-  - `docs/atoms/button/panel.md`
-  - `docs/atoms/button/type.md`
-
-### Updated libraries
-  - `import_map.json`
-
-## Comming soon (v0.1.0)
+## coming soon (v0.1.0)
 
 - Features
   - [x] Content driven documentation using Sanity.io or raw md files.

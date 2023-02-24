@@ -1,2 +1,2 @@
 ### papel
-`/papˈel/` Comming soon
+`/papˈel/` coming soon

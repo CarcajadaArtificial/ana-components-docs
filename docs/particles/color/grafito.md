@@ -1,2 +1,2 @@
 ### grafito
-`/ɡɾafˈito/` Comming soon
+`/ɡɾafˈito/` coming soon

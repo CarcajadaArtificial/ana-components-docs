@@ -1,2 +1,2 @@
 ### arena
-`/aɾˈena/` Comming soon
+`/aɾˈena/` coming soon

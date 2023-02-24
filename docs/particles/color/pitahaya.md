@@ -1,2 +1,2 @@
 ### pitahaya
-`/pˌitaˈajja/` Comming soon
+`/pˌitaˈajja/` coming soon

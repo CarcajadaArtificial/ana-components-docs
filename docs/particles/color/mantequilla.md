@@ -1,2 +1,2 @@
 ### mantequilla
-`/mˌantekˈiʎa/` Comming soon
+`/mˌantekˈiʎa/` coming soon

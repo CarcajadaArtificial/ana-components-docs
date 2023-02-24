@@ -1,2 +1,2 @@
 ### musgo
-`/mˈusɣo/` Comming soon
+`/mˈusɣo/` coming soon

@@ -1,2 +1,2 @@
 ### obsidiana
-`/ˌoβsiðjˈana/` Comming soon
+`/ˌoβsiðjˈana/` coming soon

@@ -1,2 +1,2 @@
 ### ambar
-`/ambˈaɾ/` Comming soon
+`/ambˈaɾ/` coming soon

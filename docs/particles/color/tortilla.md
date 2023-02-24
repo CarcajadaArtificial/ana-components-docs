@@ -1,2 +1,2 @@
 ### tortilla
-`/toɾtˈiʎa/` Comming soon
+`/toɾtˈiʎa/` coming soon

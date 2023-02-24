@@ -1,2 +1,2 @@
 ### vino
-`/bˈino/` Comming soon
+`/bˈino/` coming soon

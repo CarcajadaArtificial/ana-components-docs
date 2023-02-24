@@ -1,2 +1,2 @@
 ### cajeta
-`/kaxˈeta/` Comming soon
+`/kaxˈeta/` coming soon

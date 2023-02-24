@@ -1,2 +1,2 @@
 ### alien
-`/ˈaljen/` Comming soon
+`/ˈaljen/` coming soon

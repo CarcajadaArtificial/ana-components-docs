@@ -1,2 +1,2 @@
 ### azulejo
-`/ˌaθulˈexo/` Comming soon
+`/ˌaθulˈexo/` coming soon

@@ -1,2 +1,2 @@
 ### blanco
-`/blˈanko/` Comming soon
+`/blˈanko/` coming soon

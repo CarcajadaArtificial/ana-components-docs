@@ -1,2 +1,2 @@
 ### fresa
-`/fɾˈesa/` Comming soon
+`/fɾˈesa/` coming soon

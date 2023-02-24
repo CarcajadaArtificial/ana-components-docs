@@ -1,2 +1,2 @@
 ### pastel
-`/pastˈel/` Comming soon
+`/pastˈel/` coming soon

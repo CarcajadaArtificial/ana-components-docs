@@ -1,2 +1,2 @@
 ### limon
-`/limˈon/` _(Limón)_ Comming soon
+`/limˈon/` _(Limón)_ coming soon

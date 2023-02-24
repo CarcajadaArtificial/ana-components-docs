@@ -1,2 +1,2 @@
 ### ladrillo
-`/laðɾˈiʎo/` Comming soon
+`/laðɾˈiʎo/` coming soon

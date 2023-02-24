@@ -1,2 +1,2 @@
 ### mota
-`/mˈota/` Comming soon
+`/mˈota/` coming soon

@@ -1,2 +1,2 @@
 ### arandano
-`/aɾˈandano/` *(Arándano)* Comming soon
+`/aɾˈandano/` *(Arándano)* coming soon

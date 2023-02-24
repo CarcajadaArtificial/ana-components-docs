@@ -1,2 +1,2 @@
 ### menta
-`/mˈɛnta/` Comming soon
+`/mˈɛnta/` coming soon

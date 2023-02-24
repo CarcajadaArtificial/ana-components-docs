@@ -1,2 +1,2 @@
 ### flan
-`/flˈan/` Comming soon
+`/flˈan/` coming soon

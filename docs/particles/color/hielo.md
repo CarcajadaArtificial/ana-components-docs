@@ -1,2 +1,2 @@
 ### hielo
-`/jˈelo/` Comming soon
+`/jˈelo/` coming soon

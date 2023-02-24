@@ -1,2 +1,2 @@
 ### ajolote
-`/ˌaxolˈote/` Comming soon
+`/ˌaxolˈote/` coming soon

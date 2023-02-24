@@ -1,2 +1,2 @@
 ### chicle
-`/t͡ʃˈikle/` Comming soon
+`/t͡ʃˈikle/` coming soon

@@ -1,2 +1,2 @@
 ### manzana
-`/manθˈana/` Comming soon
+`/manθˈana/` coming soon

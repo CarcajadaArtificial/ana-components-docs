@@ -1,2 +1,2 @@
 ### bombon
-`/bombˈon/` _(Bombón)_ Comming soon
+`/bombˈon/` _(Bombón)_ coming soon

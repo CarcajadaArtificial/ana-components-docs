@@ -1,2 +1,2 @@
 ### chapopote
-`/t͡ʃˌapopˈote/` Comming soon
+`/t͡ʃˌapopˈote/` coming soon
