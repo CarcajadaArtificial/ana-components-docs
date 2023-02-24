@@ -6,7 +6,9 @@ import {
   Link,
   Linkmap,
   Main,
+  Select,
   Text,
+  TextArea,
 } from "ana-components";
 import { LAYOUT_TYPES } from "ana-components";
 import Page from "../../components/Page.tsx";
@@ -26,6 +28,10 @@ const doc = {
   disabled: render(await getDoc("atoms/input", "disabled")),
   checkbox: render(await getDoc("atoms/input", "checkbox")),
   button: render(await getDoc("atoms/input", "button")),
+  textarea: render(await getDoc("atoms/input", "textarea")),
+  noResize: render(await getDoc("atoms/input", "noResize")),
+  select: render(await getDoc("atoms/input", "select")),
+  options: render(await getDoc("atoms/input", "options")),
 };
 
 export default function () {
@@ -108,6 +114,39 @@ export default function () {
               <Input value="button" type="button" />
               <Input value="image button" type="image" />
             </div>
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.textarea }}
+            />
+            <TextArea
+              label="TextArea component example"
+              placeholder="Placeholder text"
+            />
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.noResize }}
+            />
+            <TextArea label="Multi-line input field" noResize />
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.select }}
+            />
+            <Select
+              label="Select component example"
+              placeholder="Placeholder"
+              options={["a", "b", "c"]}
+            />
+            <div
+              class="markdown-prose"
+              dangerouslySetInnerHTML={{ __html: doc.options }}
+            />
+            <Select
+              options={[
+                { name: "A", value: "a" },
+                { name: "B", value: "b" },
+                { name: "C", value: "c" },
+              ]}
+            />
           </div>
         </Layout>
       </Main>

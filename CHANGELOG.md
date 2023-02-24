@@ -1,17 +1,19 @@
 # Changelog
 
-## v0.0.36
+## v0.0.37
 
-### Added the `ColorList` coponent
-  - `components/ColorList.tsx`
+### Added `TextArea` and `Select` documentation
+  - `docs/atoms/input/noResize.md`
+  - `docs/atoms/input/options.md`
+  - `docs/atoms/input/select.md`
+  - `docs/atoms/input/textarea.md`
 
-### Added "patterns" to the color documentation page
-  - `routes/particles/color.tsx`
+### Added `TextArea` and `Select` to the input page
+  - `routes/atoms/input.tsx`
   - `src/links.ts`
 
-### Minor updates
-  - `components/ColorBlock.tsx`
-  - `components/ObsidianaCard.tsx`
+### Updated libraries
+  - `import_map.json`
   - `routes/_app.tsx`
 
 ## Comming soon (v0.1.0)
@@ -93,7 +95,7 @@
 
 #### Atoms
 - [x] button 🎨💾
-  - [ ] color
+  - [ ] type
     - [ ] `type` contrast 💾
     - [ ] `type` panel 💾
     - [ ] `type` invisible 💾
@@ -111,21 +113,11 @@
   - [x] `disabled` element attribute
   - [x] checkbox and radio
   - [x] button
-- [ ] select 💾
-  - [ ] `options` component property 💾
-  - [ ] `label` component property 💾
-  - [ ] `error` component property 💾
-  - [ ] `maxWidth` component property 💾
-  - [ ] `placeholder` component property 💾
+  - [x] textarea
+    - [x] `noResize` component property
+  - [x] select
+    - [x] `options` component property
 - [ ] spinner
-- [ ] textarea 💾
-  - [ ] `label` component property 💾
-  - [ ] `error` component property 💾
-  - [ ] `maxWidth` component property 💾
-  - [ ] `placeholder` element attribute 💾
-  - [ ] `type` element attribute 💾
-  - [ ] `required` element attribute 💾
-  - [ ] `disabled` element attribute 💾
 - [ ] code
 - [ ] link 💾
   - [ ] `nostyle` component property 💾

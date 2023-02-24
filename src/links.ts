@@ -34,16 +34,8 @@ export const LINKS_INTERACTIVE_ATOMS = [
     url: '/atoms/input',
   },
   {
-    name: 'select',
-    // url: '/atoms/select',
-  },
-  {
     name: '* spinner',
     // url: '/atoms/spinner',
-  },
-  {
-    name: 'textarea',
-    // url: '/atoms/textarea',
   },
 ];
 
@@ -279,6 +271,26 @@ export const LINKS_COMPONENT_INPUT = [
       {
         name: 'button',
         url: '#button',
+      },
+    ],
+  },
+  {
+    name: 'TextArea component',
+    url: '#textarea',
+    children: [
+      {
+        name: 'noResize',
+        url: '#noresize',
+      },
+    ],
+  },
+  {
+    name: 'Select component',
+    url: '#select',
+    children: [
+      {
+        name: 'options',
+        url: '#options',
       },
     ],
   },
