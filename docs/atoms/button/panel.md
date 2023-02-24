@@ -1,0 +1,2 @@
+#### Panel
+Panel buttons are used for less important actions or for actions that are related to the main action but are not the primary focus. They might be used to cancel a form or to provide additional information. 

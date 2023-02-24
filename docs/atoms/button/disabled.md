@@ -1,0 +1,2 @@
+#### disabled
+A disabled state is used to indicate that a button is not currently available for use, such as when a form is incomplete.  This type must be generally avoided with careful user experience design, but it is available for a few extreme cases.

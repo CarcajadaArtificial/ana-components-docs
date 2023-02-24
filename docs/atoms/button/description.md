@@ -4,7 +4,15 @@ A _button_ can be described as a symbol that represents a potential action. It s
 
 It embodies the idea of agency and choice. By clicking on it, the user asserts their will and directs the technology to perform a specific task. The button serves as a tangible manifestation of the user's power to shape their digital environment. It is a small but crucial element of the overall design of the user interface. Its visual appearances, such as color, shape, and size, contributes to the overall aesthetic and emotional impact of the technology.
 
-* Component
+#### `[JSX]` Button component
+```js
+import { Button } from 'ana-components';
+
+export default function () {
+	return <Button>Submit</Button>;
+}
+```
+#### `[HTML]` Rendered HTML
   ```html
-<Button>Submit</Button>
+<button class="btn">Submit</button>
 ```

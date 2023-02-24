@@ -1,20 +1,23 @@
 # Changelog
 
-## v0.0.37
+## v0.0.38
 
-### Added `TextArea` and `Select` documentation
-  - `docs/atoms/input/noResize.md`
-  - `docs/atoms/input/options.md`
-  - `docs/atoms/input/select.md`
-  - `docs/atoms/input/textarea.md`
+### Added the `ButtonPair` component
+  - `components/ButtonPair.tsx`
 
-### Added `TextArea` and `Select` to the input page
-  - `routes/atoms/input.tsx`
-  - `src/links.ts`
+### Updated the button documentation page
+  - `routes/atoms/button.tsx`
+
+### Added new button docs
+  - `docs/atoms/button/description.md`
+  - `docs/atoms/button/disabled.md`
+  - `docs/atoms/button/error.md`
+  - `docs/atoms/button/invisible.md`
+  - `docs/atoms/button/panel.md`
+  - `docs/atoms/button/type.md`
 
 ### Updated libraries
   - `import_map.json`
-  - `routes/_app.tsx`
 
 ## Comming soon (v0.1.0)
 

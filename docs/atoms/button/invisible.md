@@ -1,0 +1,2 @@
+#### invisible
+Invisible buttons are used for actions that are less frequently used or for actions that are not as important to use other buttons. These buttons might be used to access advanced features or to provide additional information.

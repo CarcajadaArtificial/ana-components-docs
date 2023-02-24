@@ -11,6 +11,7 @@ import {
   Text,
 } from "ana-components";
 import { BUTTON_TYPES, LAYOUT_TYPES } from "ana-components";
+import ButtonPair from "../../components/ButtonPair.tsx";
 import Page from "../../components/Page.tsx";
 import Navigation from "../../islands/Navigation.tsx";
 import { getDoc } from "../../src/doc.ts";
@@ -19,7 +20,11 @@ import { LINKS_COMPONENT_BUTTON } from "../../src/links.ts";
 
 const doc = {
   description: render(await getDoc("atoms/button", "description")),
-  color: render(await getDoc("atoms/button", "color")),
+  type: render(await getDoc("atoms/button", "type")),
+  panel: render(await getDoc("atoms/button", "panel")),
+  invisible: render(await getDoc("atoms/button", "invisible")),
+  disabled: render(await getDoc("atoms/button", "disabled")),
+  error: render(await getDoc("atoms/button", "error")),
   input: render(await getDoc("atoms/button", "input")),
 };
 
@@ -44,91 +49,52 @@ export default function () {
             <div>
               <div
                 class="markdown-prose"
-                dangerouslySetInnerHTML={{ __html: doc.color }}
+                dangerouslySetInnerHTML={{ __html: doc.type }}
               />
-              <div className="flex items-center gap-4 -mt-4">
-                <Card>
-                  <div class="grid gap-4">
-                    <Button>
-                      Contrast
-                    </Button>
-                    <Button color={BUTTON_TYPES.PANEL}>
-                      Panel
-                    </Button>
-                    <Button color={BUTTON_TYPES.INVISIBLE}>
-                      Invisible
-                    </Button>
-                    <Button color={BUTTON_TYPES.DISABLED}>
-                      Disabled
-                    </Button>
-                    <Button color={BUTTON_TYPES.ERROR}>
-                      Error
-                    </Button>
-                  </div>
-                </Card>
-                <div className="grid gap-4 ml-4">
-                  <Button>
-                    Contrast
-                  </Button>
-                  <Button color={BUTTON_TYPES.PANEL}>
-                    Panel
-                  </Button>
-                  <Button color={BUTTON_TYPES.INVISIBLE}>
-                    Invisible
-                  </Button>
-                  <Button color={BUTTON_TYPES.DISABLED}>
-                    Disabled
-                  </Button>
-                  <Button color={BUTTON_TYPES.ERROR}>
-                    Error
-                  </Button>
-                </div>
-              </div>
+              <ButtonPair />
+              <div
+                class="markdown-prose"
+                dangerouslySetInnerHTML={{ __html: doc.panel }}
+              />
+              <ButtonPair type={BUTTON_TYPES.PANEL} />
+              <div
+                class="markdown-prose"
+                dangerouslySetInnerHTML={{ __html: doc.invisible }}
+              />
+              <ButtonPair type={BUTTON_TYPES.INVISIBLE} />
+              <div
+                class="markdown-prose"
+                dangerouslySetInnerHTML={{ __html: doc.disabled }}
+              />
+              <ButtonPair type={BUTTON_TYPES.DISABLED} />
+              <div
+                class="markdown-prose"
+                dangerouslySetInnerHTML={{ __html: doc.error }}
+              />
+              <ButtonPair type={BUTTON_TYPES.ERROR} />
             </div>
             <div>
               <div
                 class="markdown-prose"
                 dangerouslySetInnerHTML={{ __html: doc.input }}
               />
-              <div className="flex items-center gap-4 -mt-4">
-                <Card>
-                  <div class="grid">
-                    <Input
-                      type="button"
-                      value="button"
-                      label="Button with label"
-                    />
-                    <Input type="button" value="input button" />
-                    <Input
-                      type="button"
-                      value="disabled button"
-                      disabled
-                    />
-                    <Input
-                      type="button"
-                      value="error button"
-                      error="Error message."
-                    />
-                  </div>
-                </Card>
-                <div class="grid">
-                  <Input
-                    type="button"
-                    value="button"
-                    label="Button with label"
-                  />
-                  <Input type="button" value="input button" />
-                  <Input
-                    type="button"
-                    value="disabled button"
-                    disabled
-                  />
-                  <Input
-                    type="button"
-                    value="error button"
-                    error="Error message."
-                  />
-                </div>
+              <div className="grid mt-4">
+                <Input
+                  type="button"
+                  value="button"
+                  label="Button with label"
+                />
+                <Input type="button" value="input button" />
+                <Input
+                  type="button"
+                  value="disabled button"
+                  disabled
+                />
+                <Input
+                  type="button"
+                  value="error button"
+                  error="Error message."
+                />
               </div>
             </div>
           </div>

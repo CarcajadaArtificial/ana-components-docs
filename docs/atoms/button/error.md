@@ -1,0 +1,2 @@
+#### error
+An error state is used to indicate that an error has occurred, such as when the user has entered incorrect information or when a system error has occurred. These states provide important information to the user, helping them understand the state of the system and what actions are possible at any given time.
